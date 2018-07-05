@@ -1,0 +1,6 @@
+/*
+6°¢∑÷øÈ≤È’“
+*/
+
+#include "stdafx.h"
+#include<search.h>
