@@ -38,8 +38,6 @@ c++ stl容器set成员函数:value_comp()--返回一个用于比较元素间的值的函数
 #include"stl_demo.h"
 using namespace std;
 
-
-
 SetDemo::SetDemo()
 {
 }
