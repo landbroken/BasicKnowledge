@@ -1,0 +1,5 @@
+﻿  unittest_stl.cpp
+g:\mission\cpplearning\basicknowledge\stltest\unittest_stl.cpp(19): warning C4018: “<”: 有符号/无符号不匹配
+    正在创建库 G:\mission\CppLearning\BasicKnowledge\Debug\STLTest.lib 和对象 G:\mission\CppLearning\BasicKnowledge\Debug\STLTest.exp
+  STLTest.vcxproj -> G:\mission\CppLearning\BasicKnowledge\Debug\STLTest.dll
+  STLTest.vcxproj -> G:\mission\CppLearning\BasicKnowledge\Debug\STLTest.pdb (Full PDB)

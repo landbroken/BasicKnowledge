@@ -5,14 +5,14 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace SearchTest
 {		
-	TEST_CLASS(UnitTest1)
+	TEST_CLASS(UnitTestSearch)
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
-		{
-			// TODO: 在此输入测试代码
-		}
+		//TEST_METHOD(TestMethod1)
+		//{
+		//	// TODO: 在此输入测试代码
+		//}
 
 	};
 }

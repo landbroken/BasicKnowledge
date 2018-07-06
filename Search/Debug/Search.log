@@ -1,1 +1,14 @@
-﻿
+﻿  stdafx.cpp
+  tree_search.cpp
+  sequence_search.cpp
+  search_main.cpp
+  insertion_search.cpp
+  hash_search.cpp
+  fibonacci_search.cpp
+  block_search.cpp
+  binary_search.cpp
+  正在生成代码...
+g:\mission\cpplearning\basicknowledge\search\binary_search.cpp(58): warning C4715: “BinarySearch_Recursion”: 不是所有的控件路径都返回值
+g:\mission\cpplearning\basicknowledge\search\insertion_search.cpp(50): warning C4715: “InsertionSearch”: 不是所有的控件路径都返回值
+  Search.vcxproj -> G:\mission\CppLearning\BasicKnowledge\Debug\Search.exe
+  Search.vcxproj -> G:\mission\CppLearning\BasicKnowledge\Debug\Search.pdb (Full PDB)
