@@ -27,7 +27,6 @@ VectorDemo::~VectorDemo()
 
 void VectorDemo::Add(int* data,int raw_len,int column_len)
 {
-
 	for (size_t i = 0; i < raw_len; i++)
 	{
 		for (size_t j = 0; j < column_len; j++)

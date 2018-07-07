@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include<search.h>
+#include<math.h>
 
 /*
 @brief 3、插值查找
@@ -40,11 +41,57 @@ mid=low+(key-a[low])/(a[high]-a[low])*(high-low)，
 */
 int InsertionSearch(int a[], int value, int low, int high)
 {
-	int mid = low + (value - a[low]) / (a[high] - a[low])*(high - low);
+	//此时有a[high] - a[low]=1，异常，因此提前判断
+	if (low==high&&a[low]==value)
+	{
+		return low;
+	}
+	while (low<high)
+	{
+		//需要按double计算，否则
+		//(value - a[low])*1.0 / (a[high] - a[low])很可能是0
+		//数组里没有该值时，offset可能先正后负，负值说明没有
+		int offset = (value - a[low])*1.0 / (a[high] - a[low])*(high - low);
+		int mid = low + floor(offset);
+		if (offset<0)
+		{
+			return -1;
+		}
+		if (a[mid] == value)
+		{
+			return mid;
+		}
+		if (a[mid] > value)
+		{
+			high = mid - 1;
+		}
+		if (a[mid] < value)
+		{
+			low = mid + 1;
+		}
+	}
+	//说明没有
+	return -1;
+}
+
+int InsertionSearch_Recursion(int a[], int value, int low, int high)
+{
+	if (low>high)
+	{
+		//说明没有
+		return -1;
+	}
+	int offset = (value - a[low])*1.0 / (a[high] - a[low])*(high - low);
+	int mid = low + floor(offset);
+	if (offset<0)
+	{
+		//说明没有
+		return -1;
+	}
 	if (a[mid] == value)
 		return mid;
 	if (a[mid]>value)
-		return InsertionSearch(a, value, low, mid - 1);
+		return InsertionSearch_Recursion(a, value, low, mid - 1);
 	if (a[mid]<value)
-		return InsertionSearch(a, value, mid + 1, high);
+		return InsertionSearch_Recursion(a, value, mid + 1, high);
 }

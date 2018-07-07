@@ -25,9 +25,13 @@ int BinarySearch(int a[], int value, int n)
 	high = n - 1;
 	while (low <= high)
 	{
+		//二分（折半），即mid=low+1/2*(high-low);
 		mid = (low + high) / 2;
 		if (a[mid] == value)
+		{
+			//说明搜索到了
 			return mid;
+		}
 		if (a[mid] > value)
 		{
 			//说明后一半没有，定义新搜索终点
@@ -39,6 +43,7 @@ int BinarySearch(int a[], int value, int n)
 			low = mid + 1;
 		}
 	}
+	//说明没有
 	return -1;
 }
 
@@ -48,6 +53,11 @@ int BinarySearch(int a[], int value, int n)
 */
 int BinarySearch_Recursion(int a[], int value, int low, int high)
 {
+	if (low>high)
+	{
+		//说明没有
+		return -1;
+	}
 	int mid = low + (high - low) / 2;
 	if (a[mid] == value)
 		return mid;
