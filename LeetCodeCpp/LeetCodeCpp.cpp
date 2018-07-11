@@ -22,6 +22,7 @@ public:
 		{
 			int start = hand[0];
 			int cnt = 0;
+			it = hand.begin();
 			while (cnt<W&&it != hand.end())
 			{
 				if (*it == start + cnt)
