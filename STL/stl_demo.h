@@ -3,6 +3,8 @@
 #define _STL_DEMO_H_
 
 #include<set>
+#include<map>
+#include<string>
 
 #pragma region setÈİÆ÷
 
@@ -29,6 +31,23 @@ private:
 	std::set<int> s;
 	std::set<int>::iterator it;
 	std::set<int>::reverse_iterator rit;
+};
+
+#pragma endregion
+
+#pragma region mapÈİÆ÷
+
+class MapDemo
+{
+public:
+	MapDemo();
+	~MapDemo();
+	void Insert();
+	void Output();
+
+private:
+	std::map<int, std::string> mapStudent;
+	std::map<int, std::string>::iterator iter;
 };
 
 #pragma endregion

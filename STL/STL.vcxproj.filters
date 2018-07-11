@@ -41,5 +41,8 @@
     <ClCompile Include="vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

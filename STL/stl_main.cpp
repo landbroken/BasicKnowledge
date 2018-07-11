@@ -4,11 +4,12 @@
 #include "stdafx.h"
 #include<vector>
 #include<iostream>
+#include"stl_demo.h"
 using namespace std;
 
 int main()
 {
-	vector<vector<int>> arr;
+	/*vector<vector<int>> arr;
 	const int raw_len = 3;
 	const int column_len = 4;
 	int a[raw_len*column_len] = {
@@ -24,7 +25,12 @@ int main()
 		{
 			arr[i].push_back(data[i*column_len + j]);
 		}
-	}
+	}*/
+
+	MapDemo m;
+	m.Insert();
+	m.Output();
+
     return 0;
 }
 
