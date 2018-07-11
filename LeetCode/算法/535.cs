@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+    /// <summary>
+    /// TinyURL 的加密与解密
+    /// </summary>
+    /// <remarks>
+    /// 短链接URL系统是怎么设计的？
+    /// http://www.codeceo.com/article/short-url-system-design.html
+    /// TinyURL的实现原理
+    /// https://blog.csdn.net/bdss58/article/details/74784428
+    /// leetcode 535. Encode and Decode TinyURL（长短网址互译）
+    /// https://blog.csdn.net/a731604348/article/details/70150107
+    /// </remarks>
     class _535
     {
         private static string BASE_HOST = "http://tinyurl.com/";
