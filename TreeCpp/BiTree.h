@@ -24,6 +24,8 @@ public:
 	BinaryTreeNode(const T &e, BinaryTreeNode* left, BinaryTreeNode* right) :
 		value(e), left_node(left), right_node(right) {};
 };
+template<typename T>
+using SearchTreeNode = BinaryTreeNode<T>;
 
 template< typename T>
 class BinaryTree
@@ -43,11 +45,22 @@ public:
 
 	BinaryTreeNode<T>* GetRoot() const { return m_root; };
 
-	void Add_Node(const T &value);
+	//插入一个值
+	void Insert(const T &value);
 	//插入右孩子到当前节点下
 	void InsertRightChild(BinaryTreeNode<T> *p, const T &d) const;
 	//插入左孩子到当前节点下
 	void InsertLeftChild(BinaryTreeNode<T> *p, const T &d) const;
+	BinaryTreeNode<T>* Remove(const T value, BinaryTreeNode<T>* p);
+
+	//在二叉树中找到node->value==data
+	SearchTreeNode<T>* Find(T data, BinaryTreeNode<T>* node)const;
+	//在二叉树中找到最小值
+	SearchTreeNode<T>* FindMin(BinaryTreeNode<T>* node)const;
+	//在二叉树中找到最大值
+	SearchTreeNode<T>* FindMax(BinaryTreeNode<T>* node)const;
+	//在二叉树中找到最临近值(node->value<=data)
+	SearchTreeNode<T>* FindFloor(T data, BinaryTreeNode<T>* node)const;
 
 	//先序遍历整棵树
 	void PreOrderTraverse() const;
@@ -61,6 +74,7 @@ public:
 	void InOrderTraverseRecursion() const;
 	//后序遍历整棵树（递归法）
 	void PostOrderTraverseRecursion() const;
+	//层次遍历
 	void LevelOrderTraverse() const;
 protected:
 	//先序遍历整棵树
@@ -78,7 +92,7 @@ protected:
 	//按层遍历整棵树
 	virtual void LevelOrderTraverse(BinaryTreeNode<T> *root) const;
 
-	void Destroy(BinaryTreeNode<T> *p);
+	BinaryTreeNode<T>* Destroy(BinaryTreeNode<T> *p);
 private:
 	BinaryTreeNode<T> *m_root;
 };
@@ -90,52 +104,30 @@ private:
 小于父节点的值放在左子树，大于父节点的值放在右子树
 */
 template<typename T>
-void BinaryTree<T>::Add_Node(const T &value)
+void BinaryTree<T>::Insert(const T &value)
 {
-	//定义需要用到的变量
-	//临时的指针
-	TNode<T> *currentNode;
-	//记录是否插入了新的节点
-	int flag = 0;
-
-	//将新节点插入二叉树
-	if (IsEmpty())
+	if (nullptr==m_root)
 	{
-		m_root->value = value;
+		m_root = new BinaryTreeNode<T>(value);
+		return;
+	}
+
+	SearchTreeNode<T>* nearNode = FindFloor(value, m_root);
+	SearchTreeNode<T>* next = nullptr;
+	if (value < nearNode->value)
+	{
+		next = new BinaryTreeNode<T>(value);
+		nearNode->left_node = next;
+	}
+	else if (value > nearNode->value)
+	{
+		next = new BinaryTreeNode<T>(value);
+		nearNode->right_node = next;
 	}
 	else
 	{
-		currentNode = m_root;
-		//循环结束的时刻是：flag=1，即节点已被插入
-		while (!flag)
-		{
-			if (value<currentNode->value)
-			{
-				if (currentNode->left_node == nullptr)
-				{
-					InsertLeftChild(currentNode, value);
-					currentNode->left_node = newNode;
-					flag = 1;
-				}
-				else
-				{
-					currentNode = currentNode->left_node;
-				}
-			}
-			else
-			{
-				if (currentNode->right_node == nullptr)
-				{
-					currentNode->right_node = newNode;
-					flag = 1;
-				}
-				else
-				{
-					currentNode = currentNode->right_node;
-				}
-			}
-		}//end while
-	}//end else
+		return;//已经存在的不重复添加
+	}
 }
 
 template<typename T>
@@ -152,6 +144,151 @@ void BinaryTree<T>::InsertLeftChild(BinaryTreeNode<T>* p, const T & d) const
 	BinaryTreeNode<T> *q = new BinaryTreeNode<T>(d);
 	q->left_node = p->left_node;
 	p->left_node = q;
+}
+
+/*
+@brief 删除
+@说明
+1、T是叶子节点。
+直接释放该节点的空间，如果是根节点，则直接赋值为NULL。
+2、T有一棵非空子树。
+如果是根节点，则T的唯一子树成为根节点，如果非根节点，则使其父节点指针绕过
+该节点指向其唯一子节点，释放空间。
+3、T有两棵非空子树。
+一般策略是将该节点的元素替换成它的左子树的最大元素或右子树的最小元素
+（代码中采用的是后者，即用右子树的最小元素替换被删除的节点），然后再
+删除被替换的元素。
+*/
+template<typename T>
+BinaryTreeNode<T>* BinaryTree<T>::Remove(const T data, BinaryTreeNode<T>* node)
+{
+	BinaryTreeNode<T>* tmpNode;
+
+	if (node == nullptr) 
+	{
+		return node;
+	}
+	else if (data < node->value)
+	{
+		node->left_node = BinaryTree<T>::Remove(data, node->left_node);
+	}
+	else if (data > node->value) 
+	{
+		node->right_node = BinaryTree<T>::Remove(data, node->right_node);
+	}
+	//找到该元素，开始删除
+	else if (node->left_node != nullptr && node->right_node != nullptr)
+	{
+		//有两个子树的情况
+		tmpNode = BinaryTree<T>::FindMin(node->right_node);
+		node->value = tmpNode->value;
+		node->right_node = BinaryTree<T>::Remove(node->value, node->right_node);
+	}
+	else 
+	{
+		//有一个或没有子树的情况
+		tmpNode = node;
+		//绕过被删除的节点
+		if (node->left_node == nullptr)
+		{
+			node = node->right_node;
+		}  
+		else if (node->right_node == nullptr)
+		{
+			node = node->left_node;
+		}
+		delete tmpNode;
+		tmpNode = nullptr;
+	}
+
+	return node;
+}
+
+template<typename T>
+SearchTreeNode<T> * BinaryTree<T>::Find(T data, BinaryTreeNode<T>* node) const
+{
+	if (node ==nullptr)
+	{
+		return nullptr;
+	}
+
+	if (data== node->value)
+	{
+		return node;
+	}
+	else if(data<node->value)
+	{
+		return Find(data, node->left_node);//小于根节点的在左孩子里
+	}
+	else
+	{
+		return Find(data, node->right_node);//大于根节点的在右孩子里
+	}
+}
+
+template<typename T>
+SearchTreeNode<T>* BinaryTree<T>::FindMin(BinaryTreeNode<T>* node) const
+{
+	if (node==nullptr)
+	{
+		return nullptr;
+	}
+
+	////递归实现
+	//if (node->left_node==nullptr)
+	//{
+	//	return node;
+	//}
+	//else
+	//{
+	//	return FindMin(node->left_node);
+	//}
+
+	while (node->left_node!=nullptr)
+	{
+		node = node->left_node;
+	}
+	return node;
+}
+
+template<typename T>
+SearchTreeNode<T>* BinaryTree<T>::FindMax(BinaryTreeNode<T>* node) const
+{
+	if (node == nullptr)
+	{
+		return nullptr;
+	}
+
+	while (node->right_node != nullptr)
+	{
+		node = node->right_node;
+	}
+	return node;
+}
+
+template<typename T>
+SearchTreeNode<T>* BinaryTree<T>::FindFloor(T data, BinaryTreeNode<T>* node) const
+{
+	if (m_root==nullptr)
+	{
+		return nullptr;
+	}
+	while (node->left_node!=nullptr|| node->right_node!=nullptr)
+	{
+		if(data<node->value && node->left_node!=nullptr)
+		{
+			node = node->left_node;
+		}
+		else if (data > node->value && node->right_node != nullptr)
+		{
+			node = node->right_node;
+		}
+		else 
+		{
+			return node;
+		}
+	}
+	return node;
 }
 
 template<typename T>
@@ -316,14 +453,16 @@ void BinaryTree<T>::LevelOrderTraverse(BinaryTreeNode<T>* curNode) const
 #pragma endregion
 
 template<typename T>
-void BinaryTree<T>::Destroy(BinaryTreeNode<T>* p)
+BinaryTreeNode<T>* BinaryTree<T>::Destroy(BinaryTreeNode<T>* p)
 {
 	if (nullptr != p)
 	{
-		Destroy(p->left_node);
-		Destroy(p->right_node);
+		p->left_node = Destroy(p->left_node);
+		p->right_node = Destroy(p->right_node);
 		delete p;
 		p = nullptr;
 	}
+	return nullptr;
 }
+
 #endif // BITREE_H_INCLUDED

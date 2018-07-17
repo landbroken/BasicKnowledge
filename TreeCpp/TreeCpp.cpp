@@ -50,12 +50,66 @@ int main()
 	tree.InOrderTraverse();
 	cout << endl << "ÖÐÐò±éÀúInOrderTraverseRecursion£º" << endl;
 	tree.InOrderTraverseRecursion();
-	cout << endl << "ºóÐò±éÀúPostOrderTraverse£º" << endl;
-	tree.PostOrderTraverse();
+	cout << endl << "ºóÐò±éÀú²»»á¡£¡£¡£¡£" << endl;
+	cout << endl;
 	cout << endl << "ºóÐò±éÀúPostOrderTraverseRecursion£º" << endl;
 	tree.PostOrderTraverseRecursion();
 	cout << endl << "²ãÐò±éÀú£º" << endl;
 	tree.LevelOrderTraverse();
+
+	int searchValue[10] = { 
+		13,8,8,15,6,
+		14,9,9,25,25 };
+	BinaryTree<int> searchTree;
+	for each (int var in searchValue)
+	{
+		searchTree.Insert(var);
+	}
+	cout << endl << "¶þ²æËÑË÷Ê÷²ãÐò±éÀú£º" << endl;
+	searchTree.LevelOrderTraverse();
+	cout << endl << "¶þ²æËÑË÷Ê÷FindMin£º" << endl;
+	auto searchTreeMin = searchTree.FindMin(searchTree.GetRoot());
+	cout << searchTreeMin->value << endl;
+	cout << endl << "¶þ²æËÑË÷Ê÷FindMax£º" << endl;
+	auto searchTreeMax = searchTree.FindMax(searchTree.GetRoot());
+	cout << searchTreeMax->value << endl;
+	cout << endl << "¶þ²æËÑË÷Ê÷FindFloor£º" << endl;
+	auto searchTreeNear = searchTree.FindFloor(7, searchTree.GetRoot());
+	cout << searchTreeNear->value << endl;
+	cout << endl << "¶þ²æËÑË÷Ê÷Find²»´æÔÚ£º" << endl;
+	auto searchTreeFind1 = searchTree.Find(7, searchTree.GetRoot());
+	if (searchTreeFind1==nullptr)
+	{
+		cout << "nullptr" << endl;
+	}
+	else
+	{
+		cout << searchTreeFind1->value << endl;
+	}
+	cout << endl << "¶þ²æËÑË÷Ê÷Find(14, searchTree.GetRoot())£º" << endl;
+	auto searchTreeFind2 = searchTree.Find(14, searchTree.GetRoot());
+	if (searchTreeFind2 == nullptr)
+	{
+		cout << "nullptr" << endl;
+	}
+	else
+	{
+		cout << searchTreeFind2->value << endl;
+	}
+
+	searchTree.Insert(7);
+	searchTree.Insert(16);
+	cout << endl << "²åÈë7,16ºóµÄ²ãÐò±éÀú£º" << endl;
+	searchTree.LevelOrderTraverse();
+	searchTree.Remove(9, searchTree.GetRoot());
+	cout << endl << "Remove(9ºóµÄ²ãÐò±éÀú£º" << endl;
+	searchTree.LevelOrderTraverse();
+	searchTree.Remove(6, searchTree.GetRoot());
+	cout << endl << "Remove(6ºóµÄ²ãÐò±éÀú£º" << endl;
+	searchTree.LevelOrderTraverse();
+	searchTree.Remove(15, searchTree.GetRoot());
+	cout << endl << "Remove(15ºóµÄ²ãÐò±éÀú£º" << endl;
+	searchTree.LevelOrderTraverse();
 	//cout << "Ê÷¸ß£º" << endl;
 	//cout << tree.getHeight() << endl;
 

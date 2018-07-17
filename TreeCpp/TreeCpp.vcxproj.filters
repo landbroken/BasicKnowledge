@@ -35,8 +35,5 @@
     <ClCompile Include="TreeCpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="BiTree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
