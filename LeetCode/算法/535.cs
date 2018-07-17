@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode
+namespace LeetCode.算法
 {
     /// <summary>
     /// TinyURL 的加密与解密
