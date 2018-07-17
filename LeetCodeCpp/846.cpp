@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
 	bool isNStraightHand(vector<int>& hand, int W) {
-		if (0!=hand.size()%W)
+		if (0 != hand.size() % W)
 		{
 			return false;
 		}
@@ -15,11 +15,11 @@ public:
 
 		vector<int>::iterator it = hand.begin();
 		int len = hand.size() / W;
-		it = hand.begin();
 		for (size_t i = 0; i < len; i++)
 		{
 			int start = hand[0];
 			int cnt = 0;
+			it = hand.begin();
 			while (cnt<W&&it != hand.end())
 			{
 				if (*it == start + cnt)
@@ -32,7 +32,7 @@ public:
 					it++;
 				}
 			}
-			if (cnt!=W)
+			if (cnt != W)
 			{
 				return false;
 			}
