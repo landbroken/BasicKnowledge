@@ -1,23 +1,8 @@
 #include"stdafx.h"
 #include<vector>
 #include<iostream>
+#include"stl_demo.h"
 using namespace std;
-
-class VectorDemo
-{
-public:
-	VectorDemo();
-	~VectorDemo();
-
-	//初始化vector
-	void Initial();
-	void Add(int* data, int raw_len, int column_len);
-	//遍历二维数组
-	void ErgodicOutput();
-
-private:
-	vector<vector<int>> arr;
-};
 
 VectorDemo::VectorDemo()
 {

@@ -150,6 +150,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="list.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="set.cpp" />
     <ClCompile Include="stdafx.cpp">

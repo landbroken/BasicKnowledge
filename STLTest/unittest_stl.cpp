@@ -10,6 +10,8 @@ namespace STLTest
 	private:
 		const int arrSize = 10;
 		int arr[10] = { 0,9,8,7,6,5,4,3,2,1 };
+		int arr2[20] = { 3,5,7,9,11,13,15,17,19,1,0,9,8,7,6,5,4,3,2,1 };
+		int arrSort[20] = { 0,1,1,2,3,3,4,5,5,6,7,7,8,9,9,11,13,15,17,19 };
 	public:
 		
 		TEST_METHOD(TestSet)
@@ -50,5 +52,20 @@ namespace STLTest
 
 		}
 
+		TEST_METHOD(TestList)
+		{
+			//Ìí¼Ó
+			ListDemo demo;
+			demo.Insert(arr, arrSize);
+			int insertSize = sizeof(arr2)/sizeof(int);
+			Assert::AreEqual(true, demo.IsEqual(arr2, insertSize));
+			demo.Sort();
+			Assert::AreEqual(true, demo.IsEqual(arrSort, insertSize));
+			//Çå¿Õ
+			demo.Clear();
+			auto innerVector = demo.GetOutput();
+			int size = innerVector.size();
+			Assert::AreEqual(0, size);
+		}
 	};
 }
