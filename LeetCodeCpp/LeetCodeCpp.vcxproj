@@ -152,11 +152,13 @@
   <ItemGroup>
     <ClCompile Include="338.cpp" />
     <ClCompile Include="461.cpp" />
+    <ClCompile Include="654.cpp" />
     <ClCompile Include="709.cpp" />
     <ClCompile Include="78.cpp" />
     <ClCompile Include="832.cpp" />
     <ClCompile Include="846.cpp" />
     <ClCompile Include="861.cpp" />
+    <ClCompile Include="94.cpp" />
     <ClCompile Include="LeetCodeCpp.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
