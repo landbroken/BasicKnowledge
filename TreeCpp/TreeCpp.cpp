@@ -50,8 +50,8 @@ int main()
 	tree.InOrderTraverse();
 	cout << endl << "中序遍历InOrderTraverseRecursion：" << endl;
 	tree.InOrderTraverseRecursion();
-	cout << endl << "后序遍历不会。。。。" << endl;
-	cout << endl;
+	cout << endl << "后序遍历PostOrderTraverse" << endl;
+	tree.PostOrderTraverse();
 	cout << endl << "后序遍历PostOrderTraverseRecursion：" << endl;
 	tree.PostOrderTraverseRecursion();
 	cout << endl << "层序遍历：" << endl;

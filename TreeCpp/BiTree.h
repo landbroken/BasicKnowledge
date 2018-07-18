@@ -373,6 +373,21 @@ void BinaryTree<T>::InOrderTraverse(BinaryTreeNode<T>* curNode) const
 	}
 }
 
+/*
+1）其实除了层序遍历外，三种方式的遍历都可以看作是递归思想的延续，
+其中最难的要数后序遍历，因为右子树的访问状态是一个较难处理的点。
+我们观察发现，左子树访问完成后，下一步是访问右子树，这个时候有几种
+情况：
+* 1.右子树为空 ，这个时候我们直接访问根结点；
+* 2 右子树已经访问过了，这个时候的情况与1类似，我们直接访问根结点；
+* 3 右子树不为空且未被访问过，这个时候我们就访问右子树，并递归处理。
+
+2）标准库设施。
+非递归的树的遍历几乎都会用到栈（层序遍历除外），后序遍历也不例外。
+本题中，我们思路1，2，3的正确性也依赖于栈结构。我们访问过的元素必定
+是栈顶元素，这一点由栈的特性保证（思考整个的后序遍历过程），此外，
+我们有一个额外的结点来标记已访问过的元素，与栈顶元素作比较。
+*/
 template<typename T>
 void BinaryTree<T>::PostOrderTraverse(BinaryTreeNode<T>* curNode) const
 {
@@ -382,9 +397,34 @@ void BinaryTree<T>::PostOrderTraverse(BinaryTreeNode<T>* curNode) const
 	}
 
 	stack<BinaryTreeNode<T>*> s;
-	BinaryTreeNode<T> *p = curNode;
-	int flag;
-
+	BinaryTreeNode<T>* p = curNode;
+	BinaryTreeNode<T>* pre = nullptr;
+	while (!s.empty() || p) 
+	{
+		//获取当前临时树的根节点和其连续的左孩子，直到一个叶子节点或只有right_node的节点
+		while (p != nullptr)
+		{
+			s.push(p);
+			p = p->left_node;
+		}
+		//临时根节点，可以认为是临时树，这个树没有左支
+		BinaryTreeNode<T>* top = s.top();
+		//* 1、如果临时树同时没有right_node，则top是一个叶子节点，直接访问根节点
+		//* 2、如果临时树的right_node和前一次循环值一样，则表示右子树已经遍历过了，
+		//*    直接访问根节点
+		if (top->right_node == nullptr || top->right_node == pre)
+		{
+			pre = top;
+			cout << " " << top->value << " ";
+			p = nullptr;
+			s.pop();
+		}
+		//如果临时树有right_node，且未遍历到
+		else 
+		{
+			p = top->right_node;
+		}
+	}
 }
 
 template<typename T>
