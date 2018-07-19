@@ -10,28 +10,8 @@ namespace LeetCode.算法
     {
         public bool JudgeCircle(string moves)
         {
-            char[] dir = { 'L', 'R', 'U', 'D' };
-            int len = moves.Length;
-            int lr = 0, ud = 0;
-            for (int i = 0; i < moves.Length; i++)
-            {
-                if (moves.ElementAt(i)==dir[0])
-                {
-                    lr--;
-                }
-                if (moves.ElementAt(i) == dir[1])
-                {
-                    lr++;
-                }
-                if (moves.ElementAt(i) == dir[2])
-                {
-                    ud++;
-                }
-                if (moves.ElementAt(i) == dir[3])
-                {
-                    ud--;
-                }
-            }
+            int lr = moves.Count<char>(c => c == 'L') - moves.Count<char>(c => c == 'R');
+            int ud = moves.Count<char>(c => c == 'U') - moves.Count<char>(c => c == 'D');
             if (lr==0&&ud==0)
             {
                 return true;
