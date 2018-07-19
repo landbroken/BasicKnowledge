@@ -150,8 +150,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="josephu_problem.cpp" />
     <ClCompile Include="link_list_main.cpp" />
     <ClCompile Include="link_list.cpp" />
+    <ClCompile Include="single_curcular_linked_list.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

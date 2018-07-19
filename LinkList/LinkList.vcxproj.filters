@@ -38,5 +38,11 @@
     <ClCompile Include="link_list_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="single_curcular_linked_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="josephu_problem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

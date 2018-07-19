@@ -4,7 +4,7 @@
 
 typedef struct node {
 	int data;
-	node *next;
+	struct node *next;
 	node() :data(0), next(nullptr) {}
 	node(const int& d) :data(d), next(nullptr) {}
 }NODE;
@@ -27,5 +27,32 @@ public:
 	bool Delete(int i, int *e);
 	NODE * Reverse();
 };
+
+/*
+单循环链表
+未测试，应该是这么写的
+*/
+class SingleCircularLinkedList
+{
+public:
+	SingleCircularLinkedList();
+	~SingleCircularLinkedList() {};
+
+	void push_back(const int value);
+	void clear();
+	
+
+private:
+	NODE* head;
+	NODE* tail;
+	NODE* cur;
+};
+
+#pragma region 应用题
+
+void josephu(int n, int k);
+
+#pragma endregion
+
 
 #endif // !_LINK_LIST_H_
