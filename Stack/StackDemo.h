@@ -21,15 +21,4 @@ private:
 	int* contain;
 };
 
-template<typename T>
-class StackDemo
-{
-public:
-	StackDemo() {};
-	~StackDemo() {};
-
-private:
-
-};
-
 #endif // !_STACK_DEMO_H_
