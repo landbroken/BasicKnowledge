@@ -76,6 +76,8 @@ public:
 	void PostOrderTraverseRecursion() const;
 	//层次遍历
 	void LevelOrderTraverse() const;
+	//获取树高
+	int GetHeight(BinaryTreeNode<T>* node);
 protected:
 	//先序遍历整棵树
 	virtual void PreOrderTraverse(BinaryTreeNode<T> *root) const;
@@ -331,6 +333,22 @@ template<typename T>
 void BinaryTree<T>::LevelOrderTraverse() const
 {
 	LevelOrderTraverse(m_root);
+}
+
+template<typename T>
+int BinaryTree<T>::GetHeight(BinaryTreeNode<T>* node)
+{
+	int height = 0;
+
+	if (node!=nullptr)
+	{
+		height++;
+		int max_left = GetHeight(node->left_node);
+		int max_right = GetHeight(node->right_node);
+		height += max(max_left, max_right);
+	}
+
+	return height;
 }
 
 #pragma region 遍历

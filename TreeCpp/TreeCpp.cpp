@@ -41,7 +41,8 @@ int main()
 	tree.InsertRightChild(tree.GetRoot()->left_node, 5);
 	tree.InsertLeftChild(tree.GetRoot()->right_node, 6);
 	tree.InsertRightChild(tree.GetRoot()->right_node, 7);
-	
+	tree.Insert(8);
+
 	cout << endl << "前序遍历：" << endl;
 	tree.PreOrderTraverse();
 	cout << endl << "前序遍历PreOrderTraverseRecursion：" << endl;
@@ -56,6 +57,8 @@ int main()
 	tree.PostOrderTraverseRecursion();
 	cout << endl << "层序遍历：" << endl;
 	tree.LevelOrderTraverse();
+	cout << "树高：" << endl;
+	cout << tree.GetHeight(tree.GetRoot()) << endl;
 
 	int searchValue[10] = { 
 		13,8,8,15,6,
@@ -110,8 +113,6 @@ int main()
 	searchTree.Remove(15, searchTree.GetRoot());
 	cout << endl << "Remove(15后的层序遍历：" << endl;
 	searchTree.LevelOrderTraverse();
-	//cout << "树高：" << endl;
-	//cout << tree.getHeight() << endl;
 
 	system("pause");
 	return 0;
