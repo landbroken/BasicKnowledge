@@ -13,7 +13,24 @@ namespace STLTest
 		int arr2[20] = { 3,5,7,9,11,13,15,17,19,1,0,9,8,7,6,5,4,3,2,1 };
 		int arrSort[20] = { 0,1,1,2,3,3,4,5,5,6,7,7,8,9,9,11,13,15,17,19 };
 	public:
-		
+		TEST_METHOD(TestVector)
+		{
+			//初始化，插入，修改
+			const int arrvec[4] = { 3,2,2,2 };
+			int arrvec2[4];
+			std::vector<int> vec(3, 1);//1,1,1
+			vec.insert(vec.begin(), 2);//2,1,1,1
+			std::vector<int>::iterator it = vec.begin();
+			for (size_t i = 0; i < sizeof(arrvec2) / sizeof(int); i++)
+			{
+				(*it)++;
+				arrvec2[i] = *it;
+				it++;
+				Assert::AreEqual(arrvec[i], arrvec2[i]);
+			}
+			auto _it = vec.rbegin();
+		}
+
 		TEST_METHOD(TestSet)
 		{
 			//添加
