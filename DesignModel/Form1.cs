@@ -66,7 +66,15 @@ namespace DesignPattern
 
         private void button3_Click(object sender, EventArgs e)
         {
-         
+            // 如果客户又想点肉末茄子了
+            // 再另外初始化一个肉末茄子工厂
+            Creator minceMeatEggplantFactor = new MincedMeatEggplantFactory();
+
+            // 利用肉末茄子工厂来创建肉末茄子这道菜
+            Food minceMeatEggplant = minceMeatEggplantFactor.CreateFoddFactory();
+            minceMeatEggplant.Print();
+
+            Invoke(new show(showTextbox), new object[] { minceMeatEggplant.FoodName });
         }
 
     }

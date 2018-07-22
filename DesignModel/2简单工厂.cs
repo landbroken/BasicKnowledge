@@ -10,6 +10,8 @@ namespace DesignPattern
     /// </summary>
     public abstract class Food
     {
+        public string FoodName { get; set; }
+
         // 输出点了什么菜
         public abstract void Print();
     }
@@ -21,7 +23,8 @@ namespace DesignPattern
     {
         public override void Print()
         {
-            Console.WriteLine("一份西红柿炒蛋！");
+            FoodName = "一份西红柿炒蛋！";
+            Console.WriteLine(FoodName);
         }
     }
 
@@ -32,6 +35,7 @@ namespace DesignPattern
     {
         public override void Print()
         {
+            FoodName = "一份土豆肉丝";
             Console.WriteLine("一份土豆肉丝");
         }
     }
