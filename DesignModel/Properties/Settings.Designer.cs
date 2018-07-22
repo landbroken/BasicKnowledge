@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DesignModel.Properties
+namespace DesignPattern.Properties
 {
 
 
