@@ -63,6 +63,7 @@
     <Compile Include="算法\709.cs" />
     <Compile Include="算法\804.cs" />
     <Compile Include="算法\852.cs" />
+    <Compile Include="算法\867.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
