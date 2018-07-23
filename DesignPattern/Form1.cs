@@ -77,5 +77,21 @@ namespace DesignPattern
             Invoke(new show(showTextbox), new object[] { minceMeatEggplant.FoodName });
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // 南昌工厂制作南昌的鸭脖和鸭架
+            AbstractFactory nanChangFactory = new NanChangFactory();
+            YaBo nanChangYabo = nanChangFactory.CreateYaBo();
+            nanChangYabo.Print();
+            YaJia nanChangYajia = nanChangFactory.CreateYaJia();
+            nanChangYajia.Print();
+
+            // 上海工厂制作上海的鸭脖和鸭架
+            AbstractFactory shangHaiFactory = new ShangHaiFactory();
+            shangHaiFactory.CreateYaBo().Print();
+            shangHaiFactory.CreateYaJia().Print();
+
+            Console.Read();
+        }
     }
 }
