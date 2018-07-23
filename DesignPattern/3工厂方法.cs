@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.Factory
 {
+    #region 教程版
+
     public abstract class Creator
     {
         public abstract Food CreateFoddFactory();
@@ -38,5 +40,32 @@ namespace DesignPattern
             return new MincedMeatEggplant();
         }
     }
+
+    #endregion
+
+    #region 根据教程理解自己写的示例
+
+    public interface IEquipCreator
+    {
+        IEquip CreateFactory();
+    }
+
+    public class CameraFactory : IEquipCreator
+    {
+        public IEquip CreateFactory()
+        {
+            return new Camera();
+        }
+    }
+
+    public class Camera : IEquip
+    {
+        public string GetName()
+        {
+            return nameof(Camera);
+        }
+    }
+
+    #endregion
 
 }

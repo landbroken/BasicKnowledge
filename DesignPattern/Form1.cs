@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DesignPattern.Factory;
 
 namespace DesignPattern
 {
@@ -91,7 +92,8 @@ namespace DesignPattern
             shangHaiFactory.CreateYaBo().Print();
             shangHaiFactory.CreateYaJia().Print();
 
-            Console.Read();
+            // 自己写的
+            AbstractFactoryClient.Test();
         }
     }
 }

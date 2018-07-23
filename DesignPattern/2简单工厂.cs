@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.Factory
 {
+    #region 参考教程的示例
+
     /// <summary>
     /// 菜抽象类
     /// </summary>
@@ -62,4 +64,52 @@ namespace DesignPattern
             return food;
         }
     }
+
+    #endregion
+
+    #region 根据教程理解自己写的示例
+
+    public interface IEquip
+    {
+        string GetName();
+    }
+
+    public class EquipSimpleFactory
+    {
+        private static IEquip factory = null;
+
+        public static IEquip CreateFactory(string name)
+        {
+            switch (name)
+            {
+                case "gps":
+                    factory = new Gps();
+                    break;
+                case "imu":
+                    factory = new IMU();
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
+            return factory;
+        }
+    }
+
+    public class Gps : IEquip
+    {
+        public string GetName()
+        {
+            return nameof(Gps);
+        }
+    }
+
+    public class IMU : IEquip
+    {
+        public string GetName()
+        {
+            return nameof(IMU);
+        }
+    }
+
+    #endregion
 }

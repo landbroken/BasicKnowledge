@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.Factory
 {
+    #region 教程
+
     /// <summary>
     /// 如果绝味又想开一家湖南的分店时，因为湖南喜欢吃麻的
     /// 所以这是有需要有一家湖南的工厂专门制作
@@ -45,4 +47,10 @@ namespace DesignPattern
             Console.WriteLine("湖南的鸭架子");
         }
     }
+
+    #endregion
+
+    #region 自己写的
+
+    #endregion
 }

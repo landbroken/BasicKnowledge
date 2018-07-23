@@ -20,8 +20,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.Factory
 {
+    #region 教程
+
     /// <summary>
     /// 抽象工厂类，提供创建两个不同地方的鸭架和鸭脖的接口
     /// </summary>
@@ -132,4 +134,123 @@ namespace DesignPattern
         }
     }
 
+    #endregion
+
+    #region 自己写的抽象工厂
+
+    public class AbstractFactoryClient
+    {
+        public static void Test()
+        {
+            IEquipAbstractFactory e1 = new FirstVehicleFactory();
+            var c1 = e1.CreateCamera();
+            var r1 = e1.CreateRadar();
+            
+            string tmp = "";
+            tmp = c1.GetName();
+            Console.WriteLine(tmp);
+            tmp = r1.GetName();
+            Console.WriteLine(tmp);
+
+            IEquipAbstractFactory e2 = new SecondVehicleFactory();
+            var c2 = e2.CreateCamera();
+            var r2 = e2.CreateRadar();
+
+            tmp = c2.GetName();
+            Console.WriteLine(tmp);
+            tmp = r2.GetName();
+            Console.WriteLine(tmp);
+        }
+    }
+
+    /// <summary>
+    /// 抽象工厂，将所有设备抽象出来
+    /// </summary>
+    public interface IEquipAbstractFactory
+    {
+        ICamera CreateCamera();
+        IRadar CreateRadar();
+    }
+
+    /// <summary>
+    /// 摄像头接口
+    /// </summary>
+    public interface ICamera
+    {
+        string GetName();
+    }
+
+    /// <summary>
+    /// 卫星定位设备接口
+    /// </summary>
+    public interface IRadar
+    {
+        string GetName();
+    }
+
+    /// <summary>
+    /// 第一个航行器
+    /// </summary>
+    public class FirstVehicleFactory: IEquipAbstractFactory
+    {
+        public ICamera CreateCamera()
+        {
+            return new HikVision();
+        }
+
+        public IRadar CreateRadar()
+        {
+            return new LaserRadar();
+        }
+    }
+
+    public class HikVision: ICamera
+    {
+        public string GetName()
+        {
+            return nameof(HikVision);
+        }
+    }
+
+    public class LaserRadar : IRadar
+    {
+        public string GetName()
+        {
+            return nameof(LaserRadar);
+        }
+    }
+
+    /// <summary>
+    /// 现在增加第二个航行器
+    /// </summary>
+    public class SecondVehicleFactory : IEquipAbstractFactory
+    {
+        public ICamera CreateCamera()
+        {
+            return new Uniview();
+        }
+
+        public IRadar CreateRadar()
+        {
+            return new MillimeterWaveRadar();
+        }
+    }
+
+    public class Uniview : ICamera
+    {
+        public string GetName()
+        {
+            return nameof(Uniview);
+        }
+    }
+
+    public class MillimeterWaveRadar : IRadar
+    {
+        public string GetName()
+        {
+            return nameof(MillimeterWaveRadar);
+        }
+    }
+
+    #endregion
 }
