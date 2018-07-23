@@ -89,6 +89,9 @@
     <ClCompile Include="868.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
+    <ClCompile Include="814.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LeetCodeCpp.rc">
