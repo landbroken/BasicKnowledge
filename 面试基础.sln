@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "设计模式", "设计模�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{C024445B-774A-43AE-B726-ED7475406EFF}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LeetCodePython", "PythonApplication1\LeetCodePython.pyproj", "{C0DFF160-18CA-4548-B288-4503DDF26577}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,12 @@ Global
 		{C024445B-774A-43AE-B726-ED7475406EFF}.Release|x64.Build.0 = Release|Any CPU
 		{C024445B-774A-43AE-B726-ED7475406EFF}.Release|x86.ActiveCfg = Release|Any CPU
 		{C024445B-774A-43AE-B726-ED7475406EFF}.Release|x86.Build.0 = Release|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Release|x64.ActiveCfg = Release|Any CPU
+		{C0DFF160-18CA-4548-B288-4503DDF26577}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,5 +256,6 @@ Global
 		{90B80B3E-CDA3-4C04-9B60-02BD3B919145} = {28DD8953-0D59-4CA3-A5D0-C00BA2D9C92A}
 		{B351FF65-7B44-44F3-88E4-05CD520883B4} = {7711FD3F-8D5F-47A9-B8A1-F9F0B5C1C794}
 		{C024445B-774A-43AE-B726-ED7475406EFF} = {14F32815-503F-4EFD-9525-E36C7A54B1B9}
+		{C0DFF160-18CA-4548-B288-4503DDF26577} = {D2D8292C-5A37-42B6-9EE1-F122F22DCEB9}
 	EndGlobalSection
 EndGlobal

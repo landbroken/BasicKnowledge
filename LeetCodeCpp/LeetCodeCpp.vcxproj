@@ -164,6 +164,7 @@
     <ClCompile Include="832.cpp" />
     <ClCompile Include="846.cpp" />
     <ClCompile Include="861.cpp" />
+    <ClCompile Include="868.cpp" />
     <ClCompile Include="94.cpp" />
     <ClCompile Include="LeetCodeCpp.cpp" />
     <ClCompile Include="stdafx.cpp">
