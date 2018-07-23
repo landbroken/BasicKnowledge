@@ -1,11 +1,13 @@
 # BasicKnowledge
-主要是用cpp
+主要是用cpp，部分用C#
 
-笔试面试可能涉及的算法和数据结构的demo和unit test
-LeetCode刷题
+包括：
+* 1、笔试面试可能涉及的算法和数据结构的demo和unit test
+* 2、LeetCode刷题
+* 3、设计模式（C#版）
 
 # Contributor
-林玉龙 LinYulong
+LinYulong
 
 欢迎交流
 邮箱 im.linyulong@qq.com
