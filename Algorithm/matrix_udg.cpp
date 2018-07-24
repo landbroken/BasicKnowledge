@@ -25,7 +25,11 @@ MatrixUDG::MatrixUDG()
 	cin >> mVexNum;
 	cout << "input edge number: ";
 	cin >> mEdgNum;
-	if (mVexNum < 1 || mEdgNum < 1 || (mEdgNum >(mVexNum * (mVexNum - 1))))
+	// 1、顶点数量<1
+	// 2、边数量<1 
+	// 3、无向图，边数量最多=1+……+n-1，共n-1项=(1+n-1)*(n-1)/2；
+	// 4、无向图，边数量最少=n-1
+	if (mVexNum < 1 || mEdgNum < 1 || (mEdgNum >(mVexNum * (mVexNum - 1)/2)))
 	{
 		cout << "input error: invalid parameters!" << endl;
 		return;
