@@ -41,7 +41,8 @@ void AssignReplaceDemo()
 
 	string s = "They say he carved it himself...from a BIGGER spoon";
 	string s2 = "find your soul-mate, Homer.";
-
+	//s[1] = "1";不能用这种形式
+	//replace(off,number,new string)
 	s.replace(5, s2.length(), s2);
 	//结果为"They say he carved it himself...find your soul-mate, Homer."
 	cout << s << endl;
