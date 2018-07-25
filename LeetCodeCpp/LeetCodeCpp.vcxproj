@@ -160,6 +160,7 @@
     <ClCompile Include="326.cpp" />
     <ClCompile Include="338.cpp" />
     <ClCompile Include="342.cpp" />
+    <ClCompile Include="344.cpp" />
     <ClCompile Include="349.cpp" />
     <ClCompile Include="38.cpp" />
     <ClCompile Include="461.cpp" />
