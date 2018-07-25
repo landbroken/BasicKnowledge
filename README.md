@@ -1,5 +1,7 @@
 # BasicKnowledge
-主要是用cpp，部分用C#
+我看到有clone的，不过如果觉得有用，请star一下，谢谢
+
+主要是用cpp，部分用C#，LeetCode有少量Python版的和用SQL(mqsql)的
 
 包括：
 * 1、笔试面试可能涉及的算法和数据结构的demo和unit test
