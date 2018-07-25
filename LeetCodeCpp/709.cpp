@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 class Solution {
@@ -21,3 +22,13 @@ public:
 		return str;
 	}
 };
+
+int test_709()
+{
+	Solution s;
+	string str("ZzPiTAs");
+	cout << str.c_str() << endl;
+	str = s.toLowerCase(str);
+	cout << str.c_str() << endl;
+	return 0;
+}
