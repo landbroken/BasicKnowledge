@@ -57,11 +57,35 @@ void Change2CharDemo()
 	cout << chr << endl;
 }
 
+void Change2IntDemo()
+{
+	string str1 = "-20";
+	string str2 = "5";
+	int ret = stoi(str1) + stoi(str2);
+	cout << "string to int: -20+5=" << ret << " " << endl;
+
+	int a = -3, b = 37;
+	string a_plus_b = to_string(a + b);
+	cout << "int to string: -3+37=" << a_plus_b << " " << endl;
+}
+
+void SubStringDemo()
+{
+	string str = "20+-22i";
+	int size = str.size();
+	int plus = str.find("+");
+	string real = str.substr(0, plus);//off,count
+	string imaginary = str.substr(plus + 1, size - plus - 2);
+	cout << "substring: " << real << " " << imaginary << endl;
+}
+
 int main()
 {
 	InitialDemo();
 	AssignReplaceDemo();
 	Change2CharDemo();
+	Change2IntDemo();
+	SubStringDemo();
 	system("pause");
     return 0;
 }
