@@ -44,9 +44,31 @@ void AssignReplaceDemo()
 	//s[1] = "1";不能用这种形式
 	//replace(off,number,new string)
 	s.replace(5, s2.length(), s2);
+	char* p;char c = s[0];p = &c;
+	s.replace(5, 1, p);
 	//结果为"They say he carved it himself...find your soul-mate, Homer."
 	cout << s << endl;
 
+}
+
+string ReverseStringDemo(string s) 
+{
+	int left = 0, right = s.size() - 1;
+	while (left < right) 
+	{
+		char t = s[left];
+		s[left++] = s[right];
+		s[right--] = t;
+	}
+	return s;
+}
+
+string ReverseStringDemo2(string s) {
+	int left = 0, right = s.size() - 1;
+	while (left < right) {
+		swap(s[left++], s[right--]);
+	}
+	return s;
 }
 
 void Change2CharDemo()
