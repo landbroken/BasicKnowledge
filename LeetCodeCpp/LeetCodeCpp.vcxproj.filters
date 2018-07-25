@@ -33,6 +33,9 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LeetCodeCppTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -48,9 +51,6 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="338.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
-    <ClCompile Include="78.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="461.cpp">
@@ -75,9 +75,6 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="476.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
-    <ClCompile Include="349.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="104.cpp">
@@ -105,6 +102,15 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="226.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="537.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="78.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="349.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>

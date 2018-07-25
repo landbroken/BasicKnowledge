@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include "LeetCodeCppTest.h"
 using namespace std;
 
 class Solution {
@@ -24,11 +25,7 @@ public:
 
 int main()
 {
-	Solution s;
-	string str("ZzPiTAs");
-	cout << str.c_str() << endl;
-	str = s.toLowerCase(str);
-	cout << str.c_str() << endl;
+	test_537();
     return 0;
 }
 
