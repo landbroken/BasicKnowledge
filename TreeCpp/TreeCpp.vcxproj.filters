@@ -27,12 +27,21 @@
     <ClInclude Include="BiTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="HuffmanNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Huffman.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TreeCpp.cpp">
+    <ClCompile Include="TreeCpp_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
