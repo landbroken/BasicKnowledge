@@ -116,6 +116,15 @@
     <ClCompile Include="171.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
+    <ClCompile Include="38.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="283.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="122.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LeetCodeCpp.rc">

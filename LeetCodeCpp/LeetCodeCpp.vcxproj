@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -156,10 +156,12 @@
     <ClCompile Include="171.cpp" />
     <ClCompile Include="226.cpp" />
     <ClCompile Include="231.cpp" />
+    <ClCompile Include="283.cpp" />
     <ClCompile Include="326.cpp" />
     <ClCompile Include="338.cpp" />
     <ClCompile Include="342.cpp" />
     <ClCompile Include="349.cpp" />
+    <ClCompile Include="38.cpp" />
     <ClCompile Include="461.cpp" />
     <ClCompile Include="476.cpp" />
     <ClCompile Include="537.cpp" />
@@ -175,6 +177,7 @@
     <ClCompile Include="861.cpp" />
     <ClCompile Include="868.cpp" />
     <ClCompile Include="94.cpp" />
+    <ClCompile Include="122.cpp" />
     <ClCompile Include="LeetCodeCpp.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
