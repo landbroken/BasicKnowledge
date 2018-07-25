@@ -11,10 +11,12 @@ class Solution {
 public:
 	vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
 		vector<int> ret;
-		set<int> s1(nums1.begin(),nums1.end());
+		// 对数组1进行排序 
+		sort(nums1.begin(), nums1.end());
+		// 对数组2进行排序
+		sort(nums2.begin(), nums2.end());
+		set<int> s1(nums1.begin(), nums1.end());
 		set<int> s2(nums2.begin(), nums2.end());
-		sort(s1.begin(), s1.end());
-		sort(s2.begin(), s2.end());
 		set<int>::iterator it1 = s1.begin();
 		set<int>::iterator it2 = s2.begin();
 		while (it1 != s1.end() && it2 != s2.end())
