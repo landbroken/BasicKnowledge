@@ -16,5 +16,11 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(2, ret);
 		}
 
+		TEST_METHOD(Test_278)
+		{
+			// TODO: 在此输入测试代码
+			int ret = test_278(0x7FFFFFFF);
+			Assert::AreEqual(1792997410, ret);
+		}
 	};
 }
