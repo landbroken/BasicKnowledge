@@ -125,11 +125,14 @@
     <ClCompile Include="122.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
-    <ClCompile Include="344.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="191.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="344.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="206.cpp">
+      <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
