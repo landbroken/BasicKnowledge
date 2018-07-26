@@ -206,16 +206,16 @@ NODE* LinkList::Reverse()
 		return head;
 	}
 
-	NODE *p = head, *q = head->next, *r;
+	NODE *pre = head, *cur = head->next, *next;
 	head->next = nullptr;
 
-	while (q!=nullptr)
+	while (cur!=nullptr)
 	{
-		r = q->next;
-		q->next = p;
-		p = q;
-		q = r;
+		next = cur->next;
+		cur->next = pre;
+		pre = cur;
+		cur = next;
 	}
-	head = p;
+	head = pre;
 	return head;
 }
