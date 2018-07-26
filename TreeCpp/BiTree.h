@@ -11,6 +11,9 @@
 #include <iostream>
 using namespace std;
 
+/*
+插入是按二叉搜索树写的，不过允许人工选择插入左右孩子
+*/
 template<typename T>
 class BinaryTreeNode
 {
