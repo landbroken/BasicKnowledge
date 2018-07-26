@@ -26,7 +26,9 @@ int BinarySearch(int a[], int value, int n)
 	while (low <= high)
 	{
 		//二分（折半），即mid=low+1/2*(high-low);
-		mid = (low + high) / 2;
+		//比mid=(low+high)/2更不容易溢出
+		//1/2=0，mid=low+1/2*(high-low)=low
+		mid = low + (high - low) / 2;
 		if (a[mid] == value)
 		{
 			//说明搜索到了
