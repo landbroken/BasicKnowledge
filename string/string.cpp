@@ -20,12 +20,17 @@ void InitialDemo()
 	string str3(str2, 11, 4);//从str2的第11个字符开始，读取4个字符
 	string str4;
 	str4.append(3, 'h');//增加3个'h'
+	char chr[6];
+	memset(chr, '\0', sizeof(chr));
+	chr[0] = '2';
+	string str5(chr);
 
 	cout << endl << "InitialDemo:" << endl;
 	cout << str1 << endl;
 	cout << str2 << endl;
 	cout << str3 << endl;
 	cout << str4 << endl;
+	cout << str5 << endl;
 }
 
 /*
@@ -102,6 +107,16 @@ void SubStringDemo()
 	cout << "substring: " << real << " " << imaginary << endl;
 }
 
+void FindDemo()
+{
+	string str;
+	getline(cin, str);
+	int begin = str.find(' ');
+	int end = str.find_last_of(' ');
+	string last(str, end + 1, str.size() - end);
+	cout << endl << last.size() << endl;;
+}
+
 int main()
 {
 	InitialDemo();
@@ -109,6 +124,7 @@ int main()
 	Change2CharDemo();
 	Change2IntDemo();
 	SubStringDemo();
+	FindDemo();
 	system("pause");
     return 0;
 }
