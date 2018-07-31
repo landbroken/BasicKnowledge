@@ -95,6 +95,13 @@ void Change2IntDemo()
 	int a = -3, b = 37;
 	string a_plus_b = to_string(a + b);
 	cout << "int to string: -3+37=" << a_plus_b << " " << endl;
+
+	string str3 = "-0x12";
+	string str4 = "0x76E";//1902
+	char *offset;
+	cout << "string to int: -0x12=" << strtol(str3.c_str(),&offset,0) << " " << endl;
+	cout << "string to int: 0x76E=" << strtol(str4.c_str(), &offset, 0) << " " << endl;
+	cout << "string to int: 0x76E=" << stol(str4, nullptr,0) << " " << endl;
 }
 
 void SubStringDemo()
@@ -110,11 +117,24 @@ void SubStringDemo()
 void FindDemo()
 {
 	string str;
+	cout << "FindDemo: please cin words and find spaces "<<endl;
 	getline(cin, str);
 	int begin = str.find(' ');
 	int end = str.find_last_of(' ');
 	string last(str, end + 1, str.size() - end);
-	cout << endl << last.size() << endl;;
+	cout << last<<" "<<last.size() << endl;;
+}
+
+void AddDemo()
+{
+	cout << "AddDemo" << endl;
+	string str = "";
+	str += "5";
+	cout << str << endl;
+	str.append("11");
+	cout << str << endl;
+	str.append(5,'0');
+	cout << str << endl;
 }
 
 int main()
@@ -125,6 +145,7 @@ int main()
 	Change2IntDemo();
 	SubStringDemo();
 	FindDemo();
+	AddDemo();
 	system("pause");
     return 0;
 }
