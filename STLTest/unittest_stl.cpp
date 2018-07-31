@@ -12,6 +12,7 @@ namespace STLTest
 		int arr[10] = { 0,9,8,7,6,5,4,3,2,1 };
 		int arr2[20] = { 3,5,7,9,11,13,15,17,19,1,0,9,8,7,6,5,4,3,2,1 };
 		int arrSort[20] = { 0,1,1,2,3,3,4,5,5,6,7,7,8,9,9,11,13,15,17,19 };
+		int arr3[10] = { 2,5,3,9,7,0,6,1,4,8 };
 	public:
 		TEST_METHOD(TestVector)
 		{
@@ -34,6 +35,7 @@ namespace STLTest
 		TEST_METHOD(TestSet)
 		{
 			//添加
+			//无序数组添加，set内部自动排序
 			std::set<int> out;
 			for (size_t i = 0; i < arrSize; i++)
 			{
