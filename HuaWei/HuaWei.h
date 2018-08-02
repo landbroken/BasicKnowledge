@@ -1,0 +1,33 @@
+#ifndef _HUAWEI_H_
+#define _HUAWEI_H_
+
+#pragma region 动态规划
+
+/*
+最长递增子序列详解
+https://blog.csdn.net/joylnwang/article/details/6766317
+*/
+
+/*
+C++ 华为 合唱队
+https://blog.csdn.net/bingo_12345/article/details/48324535
+
+@思路
+1.以每一个成员为中值，计算每个成员的最长正序和逆序合唱队队列人数，
+最终得到最大序列和元素。计算复杂度O(N^3)；
+
+2.对成员排序，正序和逆序各一次，采用动态规划思想，求各元素对于两个
+序列的最长公共子序列的和。计算复杂度O(NlogN)+O(N^2) = O(N^2)；
+
+3.采用动态规划的思想，对序列求解最长递增子序列和最长递减子序列；
+
+4.计算每一个元素为中值，计算前向递增最优解和后向递减最优解，得到
+最终最长最优解；
+*/
+void test_HeChangDui();
+
+#pragma endregion
+
+
+
+#endif // !_HUAWEI_H_
