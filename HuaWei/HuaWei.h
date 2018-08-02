@@ -28,6 +28,16 @@ void test_HeChangDui();
 
 #pragma endregion
 
+#pragma region ≤È’“
+
+/*
+≤È’“–÷µ‹µ•¥ 
+https://www.nowcoder.com/practice/03ba8aeeef73400ca7a37a5f3370fe68?tpId=37&tqId=21250&tPage=2&rp=&ru=%2Fta%2Fhuawei&qru=%2Fta%2Fhuawei%2Fquestion-ranking
+*/
+int test_cha_zhao_xiong_di_dan_ci();
+int test_su_shu_ban_lv();
+
+#pragma endregion
 
 
 #endif // !_HUAWEI_H_

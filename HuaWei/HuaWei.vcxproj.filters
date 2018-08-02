@@ -38,7 +38,10 @@
     <ClCompile Include="合唱队.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="源.c">
+    <ClCompile Include="查找兄弟单词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="素数伴侣.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

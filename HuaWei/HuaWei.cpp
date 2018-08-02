@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_HeChangDui();
+	test_su_shu_ban_lv();
     return 0;
 }
 
