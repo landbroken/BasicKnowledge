@@ -8,6 +8,8 @@
 #include "stdafx.h"
 #include<string>
 #include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 
 /*
@@ -49,8 +51,8 @@ void AssignReplaceDemo()
 	//s[1] = "1";不能用这种形式
 	//replace(off,number,new string)
 	s.replace(5, s2.length(), s2);
-	char* p;char c = s[0];p = &c;
-	s.replace(5, 1, p);
+	//char* p;char c = s[0];p = &c;
+	//s.replace(5, 1, p);
 	//结果为"They say he carved it himself...find your soul-mate, Homer."
 	cout << s << endl;
 
@@ -102,6 +104,10 @@ void Change2IntDemo()
 	cout << "string to int: -0x12=" << strtol(str3.c_str(),&offset,0) << " " << endl;
 	cout << "string to int: 0x76E=" << strtol(str4.c_str(), &offset, 0) << " " << endl;
 	cout << "string to int: 0x76E=" << stol(str4, nullptr,0) << " " << endl;
+	string str5 = "A4";
+	char *offset5;
+	int istr5 = strtol(str5.c_str(), &offset5, 10);
+	cout << "string to int: A4=" << istr5 << " " << endl;//0
 }
 
 void SubStringDemo()
@@ -119,8 +125,10 @@ void FindDemo()
 	string str;
 	cout << "FindDemo: please cin words and find spaces "<<endl;
 	getline(cin, str);
+	//hello world=5
+	//helloworld=-1=string
 	int begin = str.find(' ');
-	int end = str.find_last_of(' ');
+	int end = str.find_last_of(' ');//hello world =5
 	string last(str, end + 1, str.size() - end);
 	cout << last<<" "<<last.size() << endl;;
 }
@@ -137,6 +145,21 @@ void AddDemo()
 	cout << str << endl;
 }
 
+void CompareDemo()
+{
+	cout << "CompareDemo:" << endl;
+	string str1("aaa");
+	string str2("aab");
+	string str3("aaaa");
+	bool ret = str1 < str2;
+	cout << ret << endl;
+	ret = str1 < str3;
+	cout << ret << endl;
+	ret = str2 < str3;
+	cout << ret << endl;
+
+}
+
 int main()
 {
 	InitialDemo();
@@ -146,6 +169,7 @@ int main()
 	SubStringDemo();
 	FindDemo();
 	AddDemo();
+	CompareDemo();
 	system("pause");
     return 0;
 }
