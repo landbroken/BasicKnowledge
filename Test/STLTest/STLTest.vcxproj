@@ -167,7 +167,7 @@
     <ClCompile Include="unittest_stl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\STL\STL.vcxproj">
+    <ProjectReference Include="..\..\STL\STL.vcxproj">
       <Project>{96c8f6fe-1568-42f8-a3fd-1b376b0c48b6}</Project>
     </ProjectReference>
   </ItemGroup>

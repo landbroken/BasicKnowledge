@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "../LeetCodeCpp/LeetCodeCppTest.h"
+#include "../../LeetCode/LeetCodeCpp/LeetCodeCppTest.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace LeetCodeCppTest

@@ -21,7 +21,7 @@
 int BinarySearch(int a[], int value, int n)
 {
 	int low, high, mid;
-	low = 0;
+	low = 0;  
 	high = n - 1;
 	while (low <= high)
 	{

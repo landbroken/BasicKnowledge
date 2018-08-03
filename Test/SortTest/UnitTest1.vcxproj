@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{186BCAF5-561C-438E-8E73-268A51BB7314}</ProjectGuid>
+    <ProjectGuid>{169FD90B-494B-4D89-A787-8993BB1179FF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LeetCodeCppTest</RootNamespace>
+    <RootNamespace>SortTest</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>SortTest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -164,11 +165,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="unittest1.cpp" />
+    <ClCompile Include="unittest_sort.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LeetCodeCpp\LeetCodeCpp.vcxproj">
-      <Project>{bfc37384-01c9-47e3-97c6-aed2a052dada}</Project>
+    <ProjectReference Include="..\..\排序\排序.vcxproj">
+      <Project>{f9581de1-d947-4c59-9e6a-e4e6893c57a6}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

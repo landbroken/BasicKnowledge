@@ -167,7 +167,7 @@
     <ClCompile Include="unittest_search.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Search\Search.vcxproj">
+    <ProjectReference Include="..\..\Search\Search.vcxproj">
       <Project>{86b86c60-6a48-4126-b0b6-e8734ca94544}</Project>
     </ProjectReference>
   </ItemGroup>
