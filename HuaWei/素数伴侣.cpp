@@ -32,22 +32,23 @@ bool dfs(int k)
 	return false;
 }
 
-bool isprime[80000];
+const int PRIMESIZE = 80000;
+bool isprime[PRIMESIZE];
 int nums[105];
 
 int test_su_shu_ban_lv() 
 {
 	memset(isprime, 1, sizeof(isprime));
 	isprime[0] = isprime[1] = false;
-	for (int i = 4;i < 80000;i += 2)
+	for (int i = 4;i < PRIMESIZE;i += 2)
 	{
 		isprime[i] = false;
 	}
-	for (int i = 3;i*i < 80000;i += 2)
+	for (int i = 3;i*i < PRIMESIZE;i += 2)
 	{
 		if (isprime[i])
 		{
-			for (int j = i*i;j < 80000;j += 2 * i)
+			for (int j = i*i;j < PRIMESIZE;j += 2 * i)
 			{
 				isprime[j] = false;
 			}
@@ -66,6 +67,8 @@ int test_su_shu_ban_lv()
 			{
 				if (isprime[nums[i] + nums[j]]) 
 				{
+					//大于2的素数一定=偶+奇，全部记录到偶数中
+					//邻接表
 					(nums[i] & 1) ? G[i].push_back(j) : G[j].push_back(i);
 				}
 			}
@@ -73,6 +76,7 @@ int test_su_shu_ban_lv()
 
 		memset(pre, 0, sizeof(pre));
 		int ans = 0;
+		//深度优先遍历邻接表
 		for (int i = 1;i <= n;i++) 
 		{
 			memset(flag, false, sizeof(flag));
