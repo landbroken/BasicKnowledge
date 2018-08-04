@@ -3,13 +3,26 @@
 #include "../../LeetCode/LeetCodeCpp/LeetCodeCppTest.h"
 #include <vector>
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace std;
 
 namespace LeetCodeCppTest
 {		
 	TEST_CLASS(UnitTest1)
 	{
 	public:
-		
+		TEST_METHOD(Test_1)
+		{
+			// TODO: 在此输入测试代码
+			vector<int> nums = { 3, 2, 4};
+			auto ret = test_1(nums,6);
+			Assert::AreEqual(1, ret[0]);
+			Assert::AreEqual(2, ret[1]);
+			vector<int> nums2 = { 2, 7, 11, 15 };
+			ret = test_1(nums2, 9);
+			Assert::AreEqual(0, ret[0]);
+			Assert::AreEqual(1, ret[1]);
+		}
+
 		TEST_METHOD(Test_122)
 		{
 			// TODO: 在此输入测试代码
