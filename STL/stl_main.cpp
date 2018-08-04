@@ -40,10 +40,6 @@ int main()
 		it++;
 	}
 
-	MapDemo m;
-	m.Insert();
-	m.Output();
-
     return 0;
 }
 

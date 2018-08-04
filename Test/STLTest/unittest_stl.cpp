@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "../../STL/stl_demo.h"
+#include <string>
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace STLTest
@@ -85,6 +86,34 @@ namespace STLTest
 			auto innerVector = demo.GetOutput();
 			int size = innerVector.size();
 			Assert::AreEqual(0, size);
+		}
+
+		TEST_METHOD(TestMap)
+		{
+			//添加
+			MapDemo m;
+			m.Insert(1, "student_one");
+			m.Insert(2, "student_two");
+			m.Insert(3, "student_three");
+			m.Output();
+
+			//查询返回迭代器
+			//正确的查询，迭代器指向该值
+			std::string tmp = "";
+			auto mapStudent = m.GetMap();
+			auto ret = mapStudent.find(1);
+			tmp = "student_one";
+			Assert::AreEqual(1, ret->first);
+			Assert::AreEqual(tmp, ret->second);
+			ret = mapStudent.find(2);
+			tmp = "student_two";
+			Assert::AreEqual(2, ret->first);
+			Assert::AreEqual(tmp, ret->second);
+
+			//失败的查询，迭代器指向end
+			auto fail= mapStudent.find(0);
+			bool isEnd = fail == mapStudent.end();
+			Assert::AreEqual(true, isEnd);
 		}
 	};
 }

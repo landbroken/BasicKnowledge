@@ -13,11 +13,9 @@ MapDemo::~MapDemo()
 {
 }
 
-void MapDemo::Insert()
+void MapDemo::Insert(int key,string value)
 {
-	mapStudent.insert(pair<int, string>(1, "student_one"));
-	mapStudent.insert(pair<int, string>(2, "student_two"));
-	mapStudent.insert(pair<int, string>(3, "student_three"));
+	mapStudent.insert(pair<int, string>(key, value));
 }
 
 void MapDemo::Output()
@@ -29,4 +27,22 @@ void MapDemo::Output()
 		cout << iter->second;
 		cout << endl;
 	}
+}
+
+void MapDemo::Find(const int& key)
+{
+	auto ret = mapStudent.find(key);
+	if (ret!=mapStudent.end())
+	{
+		cout << "key=" << ret->first << "value=" << ret->second << endl;
+	}
+	else
+	{
+		cout << "can't find this key" << endl;
+	}
+}
+
+std::map<int, std::string> MapDemo::GetMap()
+{
+	return mapStudent;
 }

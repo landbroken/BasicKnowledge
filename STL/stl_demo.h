@@ -64,8 +64,10 @@ class MapDemo
 public:
 	MapDemo();
 	~MapDemo();
-	void Insert();
+	void Insert(int key, std::string value);
 	void Output();
+	void Find(const int & val);
+	std::map<int, std::string> GetMap();
 
 private:
 	std::map<int, std::string> mapStudent;
