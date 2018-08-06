@@ -37,6 +37,12 @@ https://www.nowcoder.com/practice/03ba8aeeef73400ca7a37a5f3370fe68?tpId=37&tqId=
 int test_cha_zhao_xiong_di_dan_ci();
 int test_su_shu_ban_lv();
 
+/*
+Êý¶À
+https://www.nowcoder.com/practice/78a1a4ebe8a34c93aac006c44f6bf8a1?tpId=37&tqId=21267&rp=0&ru=/ta/huawei&qru=/ta/huawei/question-ranking
+*/
+int test_sudoku();
+
 #pragma endregion
 
 #pragma region Í¼

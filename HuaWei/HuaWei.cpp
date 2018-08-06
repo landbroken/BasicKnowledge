@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_mi_gong_wen_ti();
+	test_sudoku();
     return 0;
 }
 
