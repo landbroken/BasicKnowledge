@@ -159,6 +159,7 @@
     </ClCompile>
     <ClCompile Include="Sudoku.cpp" />
     <ClCompile Include="合唱队.cpp" />
+    <ClCompile Include="名字的漂亮度.cpp" />
     <ClCompile Include="查找兄弟单词.cpp" />
     <ClCompile Include="素数伴侣.cpp" />
     <ClCompile Include="迷宫问题.cpp" />

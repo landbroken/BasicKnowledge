@@ -1,6 +1,16 @@
 #ifndef _HUAWEI_H_
 #define _HUAWEI_H_
 
+#pragma region ×Ö·û´®
+
+/*
+https://www.nowcoder.com/practice/02cb8d3597cf416d9f6ae1b9ddc4fde3?tpId=37&tqId=21268&rp=0&ru=/ta/huawei&qru=/ta/huawei/question-ranking
+*/
+int test_min_zi_de_piao_liang_du();
+
+#pragma endregion
+
+
 #pragma region ¶¯Ì¬¹æ»®
 
 /*

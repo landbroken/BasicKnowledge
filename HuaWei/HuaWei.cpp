@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_sudoku();
+	test_min_zi_de_piao_liang_du();
     return 0;
 }
 

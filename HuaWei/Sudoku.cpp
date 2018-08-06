@@ -1,4 +1,5 @@
 #include"stdafx.h"
+#include"HuaWei.h"
 #include <iostream>
 using namespace std;
 

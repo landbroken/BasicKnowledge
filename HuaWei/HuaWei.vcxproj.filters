@@ -50,5 +50,8 @@
     <ClCompile Include="Sudoku.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="名字的漂亮度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
