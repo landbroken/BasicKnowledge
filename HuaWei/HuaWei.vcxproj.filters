@@ -53,5 +53,8 @@
     <ClCompile Include="名字的漂亮度.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="按字节截取字符串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
