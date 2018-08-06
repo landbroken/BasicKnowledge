@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_su_shu_ban_lv();
+	test_mi_gong_wen_ti();
     return 0;
 }
 

@@ -44,5 +44,11 @@
     <ClCompile Include="素数伴侣.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="迷宫问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sudoku.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
