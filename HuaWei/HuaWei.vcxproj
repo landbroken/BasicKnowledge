@@ -158,6 +158,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Sudoku.cpp" />
+    <ClCompile Include="从单向链表中删除指定值的节点.cpp" />
     <ClCompile Include="合唱队.cpp" />
     <ClCompile Include="名字的漂亮度.cpp" />
     <ClCompile Include="按字节截取字符串.cpp" />

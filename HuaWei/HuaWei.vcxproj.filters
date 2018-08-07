@@ -56,5 +56,8 @@
     <ClCompile Include="按字节截取字符串.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="从单向链表中删除指定值的节点.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

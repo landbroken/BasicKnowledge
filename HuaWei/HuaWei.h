@@ -11,6 +11,12 @@ int test_an_zi_jie_jie_qu_zi_fu_chuan();
 
 #pragma endregion
 
+#pragma region 链表
+
+int test_shan_chu_zhi_ding_zhi_de_jie_dian();
+
+#pragma endregion
+
 
 #pragma region 动态规划
 

@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_an_zi_jie_jie_qu_zi_fu_chuan();
+	test_shan_chu_zhi_ding_zhi_de_jie_dian();
     return 0;
 }
 
