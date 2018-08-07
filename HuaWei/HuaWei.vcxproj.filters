@@ -59,5 +59,8 @@
     <ClCompile Include="从单向链表中删除指定值的节点.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="计算字符串的距离.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
