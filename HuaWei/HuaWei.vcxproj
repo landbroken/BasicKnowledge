@@ -167,6 +167,9 @@
     <ClCompile Include="计算字符串的距离.cpp" />
     <ClCompile Include="迷宫问题.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="高精度整数加法.py" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
