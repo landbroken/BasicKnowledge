@@ -65,6 +65,9 @@
     <ClCompile Include="计算字符串的距离.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="找出字符串中第一个只出现一次的字符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

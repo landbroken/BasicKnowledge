@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_shan_chu_zhi_ding_zhi_de_jie_dian();
+	test_第一个只出现一次的字符();
     return 0;
 }
 

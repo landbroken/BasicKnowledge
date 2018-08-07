@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int main()
+int test_¼ÆËã×Ö·û´®µÄ¾àÀë()
 {
 	string str1, str2;
 	while (cin >> str1 >> str2)

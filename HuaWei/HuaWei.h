@@ -8,6 +8,8 @@ https://www.nowcoder.com/practice/02cb8d3597cf416d9f6ae1b9ddc4fde3?tpId=37&tqId=
 */
 int test_min_zi_de_piao_liang_du();
 int test_an_zi_jie_jie_qu_zi_fu_chuan();
+int test_第一个只出现一次的字符();
+int test_计算字符串的距离();
 
 #pragma endregion
 
