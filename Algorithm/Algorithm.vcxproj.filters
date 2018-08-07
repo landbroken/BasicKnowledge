@@ -38,5 +38,8 @@
     <ClCompile Include="matrix_udg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="动态规划-优化编辑器问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
