@@ -160,8 +160,17 @@ void CompareDemo()
 
 }
 
+void WStringDemo()
+{
+	wstring wstr1;
+	wstr1 = L"我ABC的string";
+	wstring wstr2(L"我A的XX啊");
+	int s1 = wstr1.size();
+}
+
 int main()
 {
+	WStringDemo();
 	InitialDemo();
 	AssignReplaceDemo();
 	Change2CharDemo();
