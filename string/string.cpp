@@ -29,10 +29,20 @@ void InitialDemo()
 
 	cout << endl << "InitialDemo:" << endl;
 	cout << str1 << endl;
+	if(str1[5]== '\0')
+	{
+		cout << "越界输出：str1[5]=\0" << endl;//空
+	}
+	else
+	{
+		cout << "越界输出：str1[5]=" << str1[5] << endl;//空
+	}
+	//cout << "越界输出：str1[6]=" << str1[6] << endl;//异常
 	cout << str2 << endl;
 	cout << str3 << endl;
 	cout << str4 << endl;
 	cout << str5 << endl;
+	
 }
 
 /*
