@@ -76,5 +76,11 @@ int test_mi_gong_wen_ti();
 
 #pragma endregion
 
+#pragma region ≈≈–Ú
+
+int test_≥…º®≈≈–Ú();
+
+#pragma endregion
+
 
 #endif // !_HUAWEI_H_

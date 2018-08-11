@@ -71,6 +71,9 @@
     <ClCompile Include="火车进站.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="成绩排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
