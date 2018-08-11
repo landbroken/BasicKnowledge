@@ -19,6 +19,11 @@ int test_shan_chu_zhi_ding_zhi_de_jie_dian();
 
 #pragma endregion
 
+#pragma region 栈
+
+int test_火车进站();
+
+#pragma endregion
 
 #pragma region 动态规划
 
