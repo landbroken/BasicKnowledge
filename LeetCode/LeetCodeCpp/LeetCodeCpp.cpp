@@ -8,24 +8,8 @@
 #include "LeetCodeCppTest.h"
 using namespace std;
 
-class Solution {
-public:
-	string toLowerCase(string str) {
-		for (size_t i = 0; i < str.length(); i++)
-		{
-			if (str[i] >= 'A'&&str[i] <= 'Z')
-			{
-				char tmp = str[i] - 'A' + 'a';
-				str.replace(i, 1, 1, tmp);
-			}
-		}
-		return str;
-	}
-};
-
 int main()
 {
-	test_122();
     return 0;
 }
 

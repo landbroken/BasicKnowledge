@@ -23,6 +23,51 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(1, ret[1]);
 		}
 
+		TEST_METHOD(Test_44)
+		{
+			// TODO: 在此输入测试代码
+			string s, p;
+			bool ret = false;
+			s = "abefcdgiescdfimde";
+			p = "ab*cd?i*de";
+			ret = test_44(s, p);
+			Assert::AreEqual(true, ret);
+			s = "aa";
+			p = "a";
+			ret = test_44(s, p);
+			Assert::AreEqual(false, ret);
+
+			s = "aa";
+			p = "*";
+			ret = test_44(s, p);
+			Assert::AreEqual(true, ret);
+
+			s = "cb";
+			p = "?a";
+			ret = test_44(s, p);
+			Assert::AreEqual(false, ret);
+
+			s = "adceb";
+			p = "*a*b";
+			ret = test_44(s, p);
+			Assert::AreEqual(true, ret);
+
+			s = "acdcb";
+			p = "a*c?b";
+			ret = test_44(s, p);
+			Assert::AreEqual(false, ret);
+
+			s = "adceb";
+			p = "a?c*";
+			ret = test_44(s, p);
+			Assert::AreEqual(true, ret);
+
+			s = "ktuttwwgcbixa";
+			p = "?t?ttwwgcbixa";
+			ret = test_44(s, p);
+			Assert::AreEqual(true, ret);
+		}
+
 		TEST_METHOD(Test_122)
 		{
 			// TODO: 在此输入测试代码
