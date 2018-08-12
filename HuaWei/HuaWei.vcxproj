@@ -192,6 +192,7 @@
     <ClCompile Include="从单向链表中删除指定值的节点.cpp" />
     <ClCompile Include="24合唱队.cpp" />
     <ClCompile Include="名字的漂亮度.cpp" />
+    <ClCompile Include="a清一色.cpp" />
     <ClCompile Include="成绩排序.cpp" />
     <ClCompile Include="找出字符串中第一个只出现一次的字符.cpp" />
     <ClCompile Include="按字节截取字符串.cpp" />

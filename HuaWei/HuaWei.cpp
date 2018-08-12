@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_火车进站();
+	test_清一色();
     return 0;
 }
 

@@ -170,6 +170,9 @@
     <ClCompile Include="34图片整理.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="a清一色.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

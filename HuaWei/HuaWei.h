@@ -1,6 +1,8 @@
 #ifndef _HUAWEI_H_
 #define _HUAWEI_H_
 
+int test_ÇåÒ»É«();
+
 #pragma region ×Ö·û´®
 
 /*
