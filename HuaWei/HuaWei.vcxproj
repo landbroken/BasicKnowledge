@@ -156,6 +156,8 @@
     <ClCompile Include="4字符串分隔.cpp" />
     <ClCompile Include="5进制转换.cpp" />
     <ClCompile Include="6质数因子.cpp" />
+    <ClCompile Include="7取近似值.cpp" />
+    <ClCompile Include="8合并表记录.cpp" />
     <ClCompile Include="HuaWei.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

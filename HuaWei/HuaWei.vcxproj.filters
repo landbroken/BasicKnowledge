@@ -92,6 +92,12 @@
     <ClCompile Include="6质数因子.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="7取近似值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="8合并表记录.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
