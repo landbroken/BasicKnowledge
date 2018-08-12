@@ -33,6 +33,7 @@ H 值是不变的). 如果新的 G 值比较高, 就说明经过 C 再到达 D 不是
 */
 
 #include"stdafx.h"
+#include"HuaWei.h"
 #include<iostream>
 #include<vector>
 #include<cmath>
