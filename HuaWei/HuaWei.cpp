@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_20();
+	test_28();
     return 0;
 }
 

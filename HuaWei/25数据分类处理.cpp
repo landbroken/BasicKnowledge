@@ -42,7 +42,7 @@ int CountRightNum(const int& val, const vector<long> &vec, vector<long> &ret)
 	return ret.size() / 2;
 }
 
-int main()
+int test_25()
 {
 	int iNum, rNum;
 	// ‰»Î

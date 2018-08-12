@@ -1,13 +1,17 @@
 #include "stdafx.h"
 #include "HuaWei.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <limits.h>
-#include <math.h>
-#include <algorithm>
-#include <vector>
+#include <string.h>
 #include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <vector>
+#include <cctype>
+#include <cmath>
+#include <climits>
+#include <algorithm>
 using namespace std;
 
 vector<int> G[105];
@@ -36,7 +40,7 @@ const int PRIMESIZE = 80000;
 bool isprime[PRIMESIZE];
 int nums[105];
 
-int test_su_shu_ban_lv() 
+int test_28() 
 {
 	memset(isprime, 1, sizeof(isprime));
 	isprime[0] = isprime[1] = false;

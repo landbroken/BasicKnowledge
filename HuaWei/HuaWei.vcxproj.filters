@@ -38,12 +38,6 @@
     <ClCompile Include="HuaWei.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="查找兄弟单词.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="素数伴侣.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="迷宫问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -147,6 +141,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="25数据分类处理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="26字符串排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="27查找兄弟单词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="28素数伴侣.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="29字符串加解密.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="30字符串合并处理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="31单词倒排.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

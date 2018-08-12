@@ -2,8 +2,12 @@
 #include "HuaWei.h"
 #include <iostream>
 #include <string>
+#include <set>
+#include <map>
 #include <vector>
-#include <algorithm> 
+#include <cctype>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
 bool comparestr(string s1, string s2)
@@ -24,7 +28,7 @@ bool comparestr(string s1, string s2)
 	}
 }
 
-int test_cha_zhao_xiong_di_dan_ci()
+int test_27()
 {
 	int num;
 	string str[1000];

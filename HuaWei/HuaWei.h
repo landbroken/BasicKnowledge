@@ -64,8 +64,8 @@ int test_16();
 ²éÕÒÐÖµÜµ¥´Ê
 https://www.nowcoder.com/practice/03ba8aeeef73400ca7a37a5f3370fe68?tpId=37&tqId=21250&tPage=2&rp=&ru=%2Fta%2Fhuawei&qru=%2Fta%2Fhuawei%2Fquestion-ranking
 */
-int test_cha_zhao_xiong_di_dan_ci();
-int test_su_shu_ban_lv();
+int test_27();
+int test_28();
 
 /*
 Êý¶À
