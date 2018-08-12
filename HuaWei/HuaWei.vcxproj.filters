@@ -98,6 +98,18 @@
     <ClCompile Include="8合并表记录.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="9提取不重复的整数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="10字符个数统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11数字颠倒.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12字符串反转.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
