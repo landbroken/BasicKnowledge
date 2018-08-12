@@ -110,6 +110,15 @@
     <ClCompile Include="12字符串反转.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13句子逆序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14字串的连接最长路径查找.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15求int型正整数在内存中存储时1的个数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

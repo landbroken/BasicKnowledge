@@ -153,6 +153,9 @@
     <ClCompile Include="10字符个数统计.cpp" />
     <ClCompile Include="11数字颠倒.cpp" />
     <ClCompile Include="12字符串反转.cpp" />
+    <ClCompile Include="13句子逆序.cpp" />
+    <ClCompile Include="14字串的连接最长路径查找.cpp" />
+    <ClCompile Include="15求int型正整数在内存中存储时1的个数.cpp" />
     <ClCompile Include="1字符串最后一个单词的长度.cpp" />
     <ClCompile Include="2计算字符个数.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
