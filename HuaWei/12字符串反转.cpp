@@ -9,7 +9,7 @@
 #include <algorithm>
 using namespace std;
 
-void method_1(string str)
+static void method_1(string str)
 {
 	int size = str.size();
 	for (int i = 0;i<size;i++)
@@ -19,7 +19,7 @@ void method_1(string str)
 	cout << endl;
 }
 
-void method_2(string str)
+static void method_2(string str)
 {
 	reverse(str.begin(), str.end());
 	cout << str << endl;

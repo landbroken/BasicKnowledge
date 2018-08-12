@@ -14,7 +14,7 @@ bool compare(const string& a, const string& b)
 	return a<b;
 }
 
-int main()
+int test_14()
 {
 	int n;
 	while (cin >> n)

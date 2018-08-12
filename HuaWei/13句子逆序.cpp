@@ -9,7 +9,7 @@
 #include <algorithm>
 using namespace std;
 
-void method_1(string str)
+static void method_1(string str)
 {
 	string tmp;
 	int space = str.find_last_of(" ");
@@ -23,7 +23,7 @@ void method_1(string str)
 	cout << str << endl;
 }
 
-void method_2(string str)
+static void method_2(string str)
 {
 	string tmp = "";
 	vector<string> vec;
@@ -53,7 +53,7 @@ int test_13()
 	string str;
 	while (getline(cin, str))
 	{
-		method_1(str);
+		method_2(str);
 	}
 	return 0;
 }
