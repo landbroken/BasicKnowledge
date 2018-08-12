@@ -128,6 +128,9 @@
     <ClCompile Include="17坐标移动.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="18识别有效的IP地址和掩码并进行分类统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

@@ -158,6 +158,7 @@
     <ClCompile Include="15求int型正整数在内存中存储时1的个数.cpp" />
     <ClCompile Include="17坐标移动.cpp" />
     <ClCompile Include="16购物单.cpp" />
+    <ClCompile Include="18识别有效的IP地址和掩码并进行分类统计.cpp" />
     <ClCompile Include="1字符串最后一个单词的长度.cpp" />
     <ClCompile Include="2计算字符个数.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
