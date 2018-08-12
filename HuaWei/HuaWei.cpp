@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_28();
+	test_»ğ³µ½øÕ¾();
     return 0;
 }
 

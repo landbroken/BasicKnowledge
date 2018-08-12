@@ -13,4 +13,5 @@ int test_34()
 		sort(data.begin(), data.end());
 		cout << data << endl;
 	}
+	return 0;
 }
