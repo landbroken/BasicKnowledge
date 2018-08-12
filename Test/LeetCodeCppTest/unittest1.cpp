@@ -10,7 +10,7 @@ namespace LeetCodeCppTest
 	TEST_CLASS(UnitTest1)
 	{
 	public:
-		TEST_METHOD(Test_1)
+		TEST_METHOD(Leet_1)
 		{
 			// TODO: 在此输入测试代码
 			vector<int> nums = { 3, 2, 4};
@@ -23,7 +23,7 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(1, ret[1]);
 		}
 
-		TEST_METHOD(Test_44)
+		TEST_METHOD(Leet_44)
 		{
 			// TODO: 在此输入测试代码
 			string s, p;
@@ -68,14 +68,14 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(true, ret);
 		}
 
-		TEST_METHOD(Test_122)
+		TEST_METHOD(Leet_122)
 		{
 			// TODO: 在此输入测试代码
 			int ret = test_122();
 			Assert::AreEqual(2, ret);
 		}
 
-		TEST_METHOD(Test_220)
+		TEST_METHOD(Leet_220)
 		{
 			// TODO: 在此输入测试代码
 			bool ret = false;
@@ -93,7 +93,7 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(false, ret);
 		}
 
-		TEST_METHOD(Test_278)
+		TEST_METHOD(Leet_278)
 		{
 			// TODO: 在此输入测试代码
 			int ret = test_278(0x7FFFFFFF);
