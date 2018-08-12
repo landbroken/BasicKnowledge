@@ -74,6 +74,24 @@
     <ClCompile Include="成绩排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1字符串最后一个单词的长度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2计算字符个数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3明明的随机数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4字符串分隔.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5进制转换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6质数因子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

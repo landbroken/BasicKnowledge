@@ -150,6 +150,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1字符串最后一个单词的长度.cpp" />
+    <ClCompile Include="2计算字符个数.cpp" />
+    <ClCompile Include="3明明的随机数.cpp" />
+    <ClCompile Include="4字符串分隔.cpp" />
+    <ClCompile Include="5进制转换.cpp" />
+    <ClCompile Include="6质数因子.cpp" />
     <ClCompile Include="HuaWei.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
