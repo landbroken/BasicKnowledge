@@ -122,6 +122,12 @@
     <ClCompile Include="16购物单.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="高精度整数加法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17坐标移动.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
