@@ -131,6 +131,12 @@
     <ClCompile Include="18识别有效的IP地址和掩码并进行分类统计.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="19简单错误练习.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20密码验证合格程序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

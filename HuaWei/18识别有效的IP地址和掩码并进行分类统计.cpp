@@ -142,7 +142,7 @@ bool IpIsE(int* arr)
 	return false;
 }
 
-int main()
+int test_18()
 {
 	string str, ip, mask;
 	int a = 0, b = 0, c = 0, d = 0, e = 0, err = 0, pri = 0;
