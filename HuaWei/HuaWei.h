@@ -50,6 +50,11 @@ https://blog.csdn.net/bingo_12345/article/details/48324535
 */
 void test_HeChangDui();
 
+/*
+01背包问题变种
+*/
+int test_16();
+
 #pragma endregion
 
 #pragma region 查找
@@ -81,6 +86,7 @@ int test_mi_gong_wen_ti();
 int test_成绩排序();
 
 #pragma endregion
+
 
 
 #endif // !_HUAWEI_H_

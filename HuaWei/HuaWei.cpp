@@ -6,7 +6,7 @@
 
 int main()
 {
-	test_第一个只出现一次的字符();
+	test_16();
     return 0;
 }
 

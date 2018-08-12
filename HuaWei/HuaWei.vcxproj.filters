@@ -119,6 +119,9 @@
     <ClCompile Include="15求int型正整数在内存中存储时1的个数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="16购物单.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
