@@ -165,6 +165,7 @@
     <ClCompile Include="21简单密码.cpp" />
     <ClCompile Include="22汽水瓶.cpp" />
     <ClCompile Include="23删除字符串中出现次数最少的字符.cpp" />
+    <ClCompile Include="25数据分类处理.cpp" />
     <ClCompile Include="2计算字符个数.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
     <ClCompile Include="4字符串分隔.cpp" />
@@ -182,7 +183,7 @@
     </ClCompile>
     <ClCompile Include="Sudoku.cpp" />
     <ClCompile Include="从单向链表中删除指定值的节点.cpp" />
-    <ClCompile Include="合唱队.cpp" />
+    <ClCompile Include="24合唱队.cpp" />
     <ClCompile Include="名字的漂亮度.cpp" />
     <ClCompile Include="成绩排序.cpp" />
     <ClCompile Include="找出字符串中第一个只出现一次的字符.cpp" />

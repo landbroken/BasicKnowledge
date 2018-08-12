@@ -1,11 +1,16 @@
 #include "stdafx.h"
-#include<iostream>
+#include "HuaWei.h"
+#include <iostream>
 #include <string>
-#include<vector>
+#include <set>
+#include <map>
+#include <vector>
+#include <cctype>
+#include <cmath>
 #include <algorithm>
 using namespace std;
 
-int test_HeChangDui()
+int test_24()
 {
 	int N;
 	while (cin >> N)

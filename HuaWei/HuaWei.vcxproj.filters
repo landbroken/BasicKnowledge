@@ -38,9 +38,6 @@
     <ClCompile Include="HuaWei.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="合唱队.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="查找兄弟单词.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -144,6 +141,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="23删除字符串中出现次数最少的字符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="24合唱队.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="25数据分类处理.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

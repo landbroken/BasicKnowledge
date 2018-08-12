@@ -49,7 +49,7 @@ https://blog.csdn.net/bingo_12345/article/details/48324535
 4.计算每一个元素为中值，计算前向递增最优解和后向递减最优解，得到
 最终最长最优解；
 */
-void test_HeChangDui();
+int test_24();
 
 /*
 01背包问题变种
