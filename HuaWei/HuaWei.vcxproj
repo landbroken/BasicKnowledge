@@ -171,6 +171,9 @@
     <ClCompile Include="2计算字符个数.cpp" />
     <ClCompile Include="30字符串合并处理.cpp" />
     <ClCompile Include="31单词倒排.cpp" />
+    <ClCompile Include="32字符串运用-密码截取.cpp" />
+    <ClCompile Include="33整数与IP地址间的转换.cpp" />
+    <ClCompile Include="34图片整理.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
     <ClCompile Include="4字符串分隔.cpp" />
     <ClCompile Include="5进制转换.cpp" />

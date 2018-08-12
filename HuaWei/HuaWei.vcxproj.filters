@@ -161,6 +161,15 @@
     <ClCompile Include="31单词倒排.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="32字符串运用-密码截取.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="33整数与IP地址间的转换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="34图片整理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">
