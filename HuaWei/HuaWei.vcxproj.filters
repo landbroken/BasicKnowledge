@@ -137,6 +137,15 @@
     <ClCompile Include="20密码验证合格程序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="21简单密码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22汽水瓶.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="23删除字符串中出现次数最少的字符.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="高精度整数加法.py">

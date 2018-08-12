@@ -162,6 +162,9 @@
     <ClCompile Include="19简单错误练习.cpp" />
     <ClCompile Include="1字符串最后一个单词的长度.cpp" />
     <ClCompile Include="20密码验证合格程序.cpp" />
+    <ClCompile Include="21简单密码.cpp" />
+    <ClCompile Include="22汽水瓶.cpp" />
+    <ClCompile Include="23删除字符串中出现次数最少的字符.cpp" />
     <ClCompile Include="2计算字符个数.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
     <ClCompile Include="4字符串分隔.cpp" />
