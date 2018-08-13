@@ -63,6 +63,45 @@ namespace DesignPattern
             // 客户想点一个土豆肉丝
             Food food2 = FoodSimpleFactory.CreateFood("土豆肉丝");
             food2.Print();
+
+            string className = "gps";
+            button2_NoEncapsulation(className);
+            button2_Encapsulation(className);
+            className = "imu";
+            button2_NoEncapsulation(className);
+            button2_Encapsulation(className);
+        }
+
+        /// <summary>
+        /// 如果不用简单工厂
+        /// </summary>
+        /// <param name="str1"></param>
+        private void button2_NoEncapsulation(string className)
+        {
+            string str1 = "";
+            if (className == "gps")
+            {
+                Gps e1 = new Gps();
+                str1 = e1.GetName();
+                Invoke(new show(showTextbox), new object[] { str1 });
+            }
+            else
+            {
+                IMU e2 = new IMU();
+                str1 = e2.GetName();
+                Invoke(new show(showTextbox), new object[] { str1 });
+            }
+        }
+
+        /// <summary>
+        /// 如果用简单工厂
+        /// </summary>
+        /// <param name="className"></param>
+        private void button2_Encapsulation(string className)
+        {
+            IEquip e3 = EquipSimpleFactory.CreateFactory(className);
+            string str1 = e3.GetName();
+            Invoke(new show(showTextbox), new object[] { str1 });
         }
 
         private void button3_Click(object sender, EventArgs e)
