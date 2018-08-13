@@ -5,11 +5,21 @@
 
 # Content
 主要包括：
-* 1、笔试面试可能涉及的算法和数据结构的demo和unit test
-* 2、LeetCode刷题
+
+基础知识部分
+* 1、基础算法
+* 2、数据结构
 * 3、设计模式（C#版）
 * 4、TCP/IP网络通信
 * 5、多线程
+* 6、STL
+
+刷题部分
+* 1、LeetCode刷题
+* 2、华为OJ
+
+单元测试部分
+* 1、以上各内容的单元测试
 
 # Contributor
 LinYulong
