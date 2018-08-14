@@ -174,7 +174,13 @@
     <ClCompile Include="32字符串运用-密码截取.cpp" />
     <ClCompile Include="33整数与IP地址间的转换.cpp" />
     <ClCompile Include="34图片整理.cpp" />
+    <ClCompile Include="35蛇形矩阵.cpp" />
+    <ClCompile Include="36字符串加密.cpp" />
+    <ClCompile Include="37统计每个月兔子的总数.cpp" />
+    <ClCompile Include="38求小球落地5次后所经历的路程和第5次反弹的高度.cpp" />
+    <ClCompile Include="39判断两个IP是否属于同一子网.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
+    <ClCompile Include="40输入一行字符，分别统计出包含英文字母空格数字和其它字符的个数.cpp" />
     <ClCompile Include="4字符串分隔.cpp" />
     <ClCompile Include="5进制转换.cpp" />
     <ClCompile Include="6质数因子.cpp" />
