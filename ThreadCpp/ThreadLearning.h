@@ -19,4 +19,8 @@ int mutex_demo();
 int timed_mutex_demo();
 /*Thread的线程本地存储（Thread Local Storage）*/
 void thread_local_demo();
+
+/*call_once和once_flag*/
+int call_once_demo();
+
 #endif // !_THREADLEARNING_H_

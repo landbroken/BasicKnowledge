@@ -14,8 +14,13 @@
 
 // TODO:  在此处引用程序需要的其他头文件
 #include <iostream>
+#include <list>
 #include <string>
+
 #include <thread>
 #include <mutex>
 #include <chrono>
+#include <condition_variable>
+#include <atomic>
+
 using namespace std;

@@ -50,5 +50,14 @@
     <ClCompile Include="5_thread_local_storage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="7_atomic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6_condition_variable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="8_call_once.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

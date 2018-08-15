@@ -155,6 +155,9 @@
     <ClCompile Include="3_mutex.cpp" />
     <ClCompile Include="4_timed_mutex.cpp" />
     <ClCompile Include="5_thread_local_storage.cpp" />
+    <ClCompile Include="6_condition_variable.cpp" />
+    <ClCompile Include="7_atomic.cpp" />
+    <ClCompile Include="8_call_once.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
