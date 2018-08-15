@@ -15,5 +15,7 @@ void thread_move();
 
 /*互斥量示例*/
 int mutex_demo();
+/*带超时的互斥量示例*/
+int timed_mutex_demo();
 
 #endif // !_THREADLEARNING_H_

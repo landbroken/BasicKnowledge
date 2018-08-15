@@ -44,5 +44,8 @@
     <ClCompile Include="1_thread.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="4_timed_mutex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

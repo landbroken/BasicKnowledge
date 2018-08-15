@@ -13,7 +13,7 @@ void func(int a, int b, int c)
 
 int main()
 {
-	mutex_demo();
+	timed_mutex_demo();
 
 	//后台执行t2的线程函数,并且不会因为main函数结束时,线程函数未执行完而产生异常
 	//std::thread t2(func, 2, 3, 4);
