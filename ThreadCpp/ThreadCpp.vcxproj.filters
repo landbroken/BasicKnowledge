@@ -35,10 +35,13 @@
     <ClCompile Include="ThreadCpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1_demo.cpp">
+    <ClCompile Include="3_mutex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="2_demo.cpp">
+    <ClCompile Include="2_move.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1_thread.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

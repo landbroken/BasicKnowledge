@@ -150,8 +150,9 @@
     <ClInclude Include="ThreadLearning.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_demo.cpp" />
-    <ClCompile Include="2_demo.cpp" />
+    <ClCompile Include="1_thread.cpp" />
+    <ClCompile Include="2_move.cpp" />
+    <ClCompile Include="3_mutex.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -13,4 +13,7 @@ void hello_world();
 /*线程移动示例*/
 void thread_move();
 
+/*互斥量示例*/
+int mutex_demo();
+
 #endif // !_THREADLEARNING_H_

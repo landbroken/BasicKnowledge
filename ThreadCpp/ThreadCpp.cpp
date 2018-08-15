@@ -13,14 +13,12 @@ void func(int a, int b, int c)
 
 int main()
 {
-	hello_world();
+	mutex_demo();
 
 	//后台执行t2的线程函数,并且不会因为main函数结束时,线程函数未执行完而产生异常
 	//std::thread t2(func, 2, 3, 4);
 	//t2.detach();
 	//cout << "after t2 ,main is runing" << endl;
-
-
 
 	//获取CPU的核数
 	cout << "CPU: " << thread::hardware_concurrency() << endl;
