@@ -106,6 +106,8 @@ namespace DesignPattern
 
         private void button3_Click(object sender, EventArgs e)
         {
+            #region 教程的版本
+
             // 如果客户又想点肉末茄子了
             // 再另外初始化一个肉末茄子工厂
             Creator minceMeatEggplantFactor = new MincedMeatEggplantFactory();
@@ -115,6 +117,30 @@ namespace DesignPattern
             minceMeatEggplant.Print();
 
             Invoke(new show(showTextbox), new object[] { minceMeatEggplant.FoodName });
+
+            #endregion
+
+            #region 自己的版本
+
+            IEquipCreator IEC;
+            string str1;
+            //已经有了gps和imu类
+            IEC = new GpsFactory();
+            IEquip _gps = IEC.CreateFactory();
+            str1 = _gps.GetName();
+            Invoke(new show(showTextbox), new object[] { str1 });
+
+            IEC = new IMUFactory();
+            IEquip _imu = IEC.CreateFactory();
+            str1 = _imu.GetName();
+            Invoke(new show(showTextbox), new object[] { str1 });
+            //现在新增camera类，新增和调用时都不需要对原有类进行修改
+            IEC = new CameraFactory();
+            IEquip _camera = IEC.CreateFactory();
+            str1 = _camera.GetName();
+            Invoke(new show(showTextbox), new object[] { str1 });
+
+            #endregion
         }
 
         private void button4_Click(object sender, EventArgs e)

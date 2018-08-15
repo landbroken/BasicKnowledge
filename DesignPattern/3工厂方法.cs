@@ -50,6 +50,31 @@ namespace DesignPattern.Factory
         IEquip CreateFactory();
     }
 
+    /// <summary>
+    /// gps的工厂方法
+    /// </summary>
+    public class GpsFactory : IEquipCreator
+    {
+        public IEquip CreateFactory()
+        {
+            return new Gps();
+        }
+    }
+
+    /// <summary>
+    /// 惯性测量单元的工厂方法
+    /// </summary>
+    public class IMUFactory : IEquipCreator
+    {
+        public IEquip CreateFactory()
+        {
+            return new IMU();
+        }
+    }
+
+    /// <summary>
+    /// 摄像头工厂方法
+    /// </summary>
     public class CameraFactory : IEquipCreator
     {
         public IEquip CreateFactory()
@@ -58,6 +83,9 @@ namespace DesignPattern.Factory
         }
     }
 
+    /// <summary>
+    /// 摄像头设备
+    /// </summary>
     public class Camera : IEquip
     {
         public string GetName()

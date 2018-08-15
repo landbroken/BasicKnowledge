@@ -69,11 +69,17 @@ namespace DesignPattern.Factory
 
     #region 根据教程理解自己写的示例
 
+    /// <summary>
+    /// 设备抽象接口
+    /// </summary>
     public interface IEquip
     {
         string GetName();
     }
 
+    /// <summary>
+    /// 简单工厂模式的工厂
+    /// </summary>
     public class EquipSimpleFactory
     {
         private static IEquip factory = null;
@@ -95,6 +101,9 @@ namespace DesignPattern.Factory
         }
     }
 
+    /// <summary>
+    /// GPS设备
+    /// </summary>
     public class Gps : IEquip
     {
         public string GetName()
@@ -103,6 +112,9 @@ namespace DesignPattern.Factory
         }
     }
 
+    /// <summary>
+    /// 惯性测量单元设备
+    /// </summary>
     public class IMU : IEquip
     {
         public string GetName()
