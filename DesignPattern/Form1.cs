@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DesignPattern.Factory;
+using DesignPattern.Builder;
 
 namespace DesignPattern
 {
@@ -159,6 +160,11 @@ namespace DesignPattern
 
             // 自己写的
             AbstractFactoryClient.Test();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            BuilderUser.test();
         }
     }
 }

@@ -175,17 +175,17 @@ namespace DesignPattern.Factory
     /// <summary>
     /// 摄像头接口
     /// </summary>
-    public interface ICamera
+    public interface ICamera : IEquip
     {
-        string GetName();
+        new string GetName();
     }
 
     /// <summary>
     /// 卫星定位设备接口
     /// </summary>
-    public interface IRadar
+    public interface IRadar : IEquip
     {
-        string GetName();
+        new string GetName();
     }
 
     /// <summary>
