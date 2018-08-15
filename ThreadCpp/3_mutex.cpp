@@ -2,6 +2,10 @@
 
 static std::mutex g_lock;
 
+/*
+你在lock一个 std::mutex 对象之后必须解锁（unlock）。
+如果你已经对其加锁，你不能再次lock。
+*/
 void lock_unlock()
 {
 	//上锁

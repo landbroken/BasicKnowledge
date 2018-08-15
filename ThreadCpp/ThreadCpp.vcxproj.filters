@@ -47,5 +47,8 @@
     <ClCompile Include="4_timed_mutex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5_thread_local_storage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -17,5 +17,6 @@ void thread_move();
 int mutex_demo();
 /*带超时的互斥量示例*/
 int timed_mutex_demo();
-
+/*Thread的线程本地存储（Thread Local Storage）*/
+void thread_local_demo();
 #endif // !_THREADLEARNING_H_
