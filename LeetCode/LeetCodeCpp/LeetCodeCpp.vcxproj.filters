@@ -194,6 +194,9 @@
     <ClCompile Include="2.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
+    <ClCompile Include="48.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LeetCodeCpp.rc">
