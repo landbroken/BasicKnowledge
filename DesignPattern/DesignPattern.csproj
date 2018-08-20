@@ -46,6 +46,7 @@
     <Compile Include="4_2抽象工厂新增工厂.cs" />
     <Compile Include="4抽象工厂.cs" />
     <Compile Include="5建造者模式.cs" />
+    <Compile Include="8桥接模式.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

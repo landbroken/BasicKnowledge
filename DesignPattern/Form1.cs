@@ -8,11 +8,24 @@ using System.Text;
 using System.Windows.Forms;
 using DesignPattern.Factory;
 using DesignPattern.Builder;
+using DesignPattern.Bridge;
 
 namespace DesignPattern
 {
     public partial class Form1 : Form
     {
+        #region 委托
+
+        delegate void show(string data);
+        public void showTextbox(string data)
+        {
+            textBox1.Text += data + Environment.NewLine;
+        }
+
+        #endregion
+
+        #region Form相关
+
         public Form1()
         {
             InitializeComponent();
@@ -23,11 +36,7 @@ namespace DesignPattern
 
         }
 
-        delegate void show(string data);
-        public void showTextbox(string data)
-        {
-            textBox1.Text += data + Environment.NewLine;
-        }
+        #endregion
 
         private class TestModel
         {
@@ -165,6 +174,12 @@ namespace DesignPattern
         private void button5_Click(object sender, EventArgs e)
         {
             BuilderUser.test();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Bridge.Client.test();
+            Bridge.MyClient.test();
         }
     }
 }
