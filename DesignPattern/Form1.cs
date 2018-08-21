@@ -11,6 +11,7 @@ using DesignPattern.Builder;
 using DesignPattern.Prototype;
 using DesignPattern.Adapter;
 using DesignPattern.Bridge;
+using DesignPattern.Decorator;
 
 namespace DesignPattern
 {
@@ -194,6 +195,17 @@ namespace DesignPattern
         {
             Bridge.Client.test();
             Bridge.MyClient.test();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Decorator.Customer.test();
+            Decorator.MyClient.test();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
