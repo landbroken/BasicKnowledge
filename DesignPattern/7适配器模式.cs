@@ -69,8 +69,11 @@ namespace DesignPattern.Adapter
     {
         public static void test()
         {
+            //新的usb接口行为和旧的一样，都是插进去
+            //但是usb形状不一样（函数接口不一样）
+            //适配器模型转换一下就能调用旧接口了
             ITypeC typeC = new TypeC();
-            typeC.Request();
+            typeC.NewUsb();
             Console.ReadLine();
         }
     }
@@ -80,7 +83,7 @@ namespace DesignPattern.Adapter
     /// </summary>
     public interface ITypeC
     {
-        void Request();
+        void NewUsb();
     }
 
     /// <summary>
@@ -88,7 +91,7 @@ namespace DesignPattern.Adapter
     /// </summary>
     public abstract class MicroUSB
     {
-        public void SpecificRequest()
+        public void OldUsb()
         {
             Console.WriteLine(nameof(MicroUSB)+"插入");
         }
@@ -103,10 +106,10 @@ namespace DesignPattern.Adapter
         /// <summary>
         /// 实现新的插头方法
         /// </summary>
-        public void Request()
+        public void NewUsb()
         {
             // 调用旧插头方法
-            this.SpecificRequest();
+            this.OldUsb();
         }
     }
 
