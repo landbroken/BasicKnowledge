@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using DesignPattern.Factory;
 using DesignPattern.Builder;
+using DesignPattern.Prototype;
 using DesignPattern.Bridge;
 
 namespace DesignPattern
@@ -174,6 +175,17 @@ namespace DesignPattern
         private void button5_Click(object sender, EventArgs e)
         {
             BuilderUser.test();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Prototype.Client.test();
+            Prototype.MyClient.test();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button8_Click(object sender, EventArgs e)
