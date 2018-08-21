@@ -19,4 +19,5 @@ int test_37()
 		}
 		cout << a + b + c << endl;
 	}
+	return 0;
 }
