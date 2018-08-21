@@ -1,9 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "../../LeetCode/LeetCodeCpp/LeetCodeCppTest.h"
-#include <vector>
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace std;
 
 namespace LeetCodeCppTest
 {		
@@ -99,5 +97,20 @@ namespace LeetCodeCppTest
 			int ret = test_278(0x7FFFFFFF);
 			Assert::AreEqual(1792997410, ret);
 		}
+
+		TEST_METHOD(Leet_387)
+		{
+			// TODO: 在此输入测试代码
+			string str;
+			int ret;
+			str = "leetcode";
+			ret = test_387(str);
+			Assert::AreEqual(0, ret);
+
+			str = "loveleetcode";
+			ret = test_387(str);
+			Assert::AreEqual(2, ret);
+		}
+
 	};
 }
