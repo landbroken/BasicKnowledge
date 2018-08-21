@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DesignPattern.Factory;
 using DesignPattern.Builder;
 using DesignPattern.Prototype;
+using DesignPattern.Adapter;
 using DesignPattern.Bridge;
 
 namespace DesignPattern
@@ -185,7 +186,8 @@ namespace DesignPattern
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Adapter.Client.test();
+            Adapter.MyClient.test();
         }
 
         private void button8_Click(object sender, EventArgs e)
