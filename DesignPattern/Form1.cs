@@ -205,7 +205,7 @@ namespace DesignPattern
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            Composite.MyClient.test();
         }
     }
 }
