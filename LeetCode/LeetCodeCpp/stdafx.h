@@ -17,5 +17,6 @@
 #include <algorithm>
 #include <unordered_set>
 #include <unordered_map>
+#include <cctype>
 
 using namespace std;
