@@ -91,6 +91,20 @@ namespace LeetCodeCppTest
 			Assert::AreEqual(false, ret);
 		}
 
+		TEST_METHOD(Leet_234)
+		{
+			// TODO: 在此输入测试代码
+			bool ret = false;
+			int arr[2] = { 1,2 };
+
+			ret = test_234(arr, 2);//false
+			Assert::AreEqual(false, ret);
+
+			int arr2[4] = { 1,2,2,1 };
+			ret = test_234(arr2, 4);//true
+			Assert::AreEqual(true, ret);
+		}
+
 		TEST_METHOD(Leet_278)
 		{
 			// TODO: 在此输入测试代码
