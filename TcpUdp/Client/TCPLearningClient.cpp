@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	WSADATA wsaData;
 	WORD sockVersion = MAKEWORD(2, 0);//指定版本号  
 	::WSAStartup(sockVersion, &wsaData);//载入winsock的dll  
-										
+	
 	SOCKET s = ::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);//建立socket，基于tcp  
 	if (s == INVALID_SOCKET)
 	{
@@ -41,6 +41,9 @@ int main(int argc, char* argv[])
 	}
 
 	sockaddr_in servAddr;
+	//AF_INET是IPv4 网络协议的套接字类型，
+	//AF_INET6 则是 IPv6 的；
+	//AF_UNIX 则是 Unix 系统本地通信
 	servAddr.sin_family = AF_INET;
 	//端口号，htons用来将主机字节顺序转换为网络字节顺序(to network short)
 	servAddr.sin_port = htons(PORT);
