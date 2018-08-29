@@ -497,7 +497,8 @@ void BinaryTree<T>::LevelOrderTraverse(BinaryTreeNode<T>* curNode) const
 	}
 	while (!q.empty())
 	{
-		curNode = q.front(), q.pop();
+		curNode = q.front();
+		q.pop();
 		cout << " " << curNode->value << " ";
 		if (nullptr != curNode->left_node)
 		{

@@ -140,7 +140,7 @@ int HuffmanTest_test()
 
 int main()
 {
-	HuffmanTest_test();
+	BinaryTree_test();
 	system("pause");
 	return 0;
 }
