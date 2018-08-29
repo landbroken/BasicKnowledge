@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.cpp" />
+    <ClCompile Include="101对称二叉树.cpp" />
     <ClCompile Include="104.cpp" />
     <ClCompile Include="111.cpp" />
     <ClCompile Include="121.cpp" />

@@ -230,6 +230,9 @@
     <ClCompile Include="98.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
+    <ClCompile Include="101对称二叉树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LeetCodeCpp.rc">

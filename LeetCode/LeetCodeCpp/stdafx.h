@@ -14,6 +14,7 @@
 // TODO:  在此处引用程序需要的其他头文件
 #include <vector>
 #include <set>
+#include <stack>
 #include <algorithm>
 #include <unordered_set>
 #include <unordered_map>
