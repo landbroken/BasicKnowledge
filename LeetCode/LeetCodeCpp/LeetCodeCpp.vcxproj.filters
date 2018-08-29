@@ -36,6 +36,9 @@
     <ClInclude Include="LeetCodeCppTest.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -65,9 +68,6 @@
     <ClCompile Include="94.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
-    <ClCompile Include="654.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
     <ClCompile Include="657.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
@@ -80,13 +80,7 @@
     <ClCompile Include="104.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
-    <ClCompile Include="111.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
     <ClCompile Include="868.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
-    <ClCompile Include="814.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="342.cpp">
@@ -96,12 +90,6 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="326.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
-    <ClCompile Include="617.cpp">
-      <Filter>源文件\算法</Filter>
-    </ClCompile>
-    <ClCompile Include="226.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="537.cpp">
@@ -231,6 +219,27 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="101对称二叉树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="102二叉树的层次遍历.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="108将有序数组转换为二叉搜索树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="814二叉树剪枝.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="654最大二叉树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="617合并二叉树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="226翻转二叉树.cpp">
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="111二叉树的最小深度.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>

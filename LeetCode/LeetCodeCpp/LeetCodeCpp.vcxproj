@@ -149,12 +149,15 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TreeNode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.cpp" />
     <ClCompile Include="101对称二叉树.cpp" />
+    <ClCompile Include="102二叉树的层次遍历.cpp" />
     <ClCompile Include="104.cpp" />
-    <ClCompile Include="111.cpp" />
+    <ClCompile Include="108将有序数组转换为二叉搜索树.cpp" />
+    <ClCompile Include="111二叉树的最小深度.cpp" />
     <ClCompile Include="121.cpp" />
     <ClCompile Include="125.cpp" />
     <ClCompile Include="128.cpp" />
@@ -174,7 +177,7 @@
     <ClCompile Include="214.cpp" />
     <ClCompile Include="217.cpp" />
     <ClCompile Include="220.cpp" />
-    <ClCompile Include="226.cpp" />
+    <ClCompile Include="226翻转二叉树.cpp" />
     <ClCompile Include="231.cpp" />
     <ClCompile Include="234.cpp" />
     <ClCompile Include="242.cpp" />
@@ -197,8 +200,8 @@
     <ClCompile Include="48.cpp" />
     <ClCompile Include="53.cpp" />
     <ClCompile Include="537.cpp" />
-    <ClCompile Include="617.cpp" />
-    <ClCompile Include="654.cpp" />
+    <ClCompile Include="617合并二叉树.cpp" />
+    <ClCompile Include="654最大二叉树.cpp" />
     <ClCompile Include="657.cpp" />
     <ClCompile Include="7.cpp" />
     <ClCompile Include="70.cpp" />
@@ -206,7 +209,7 @@
     <ClCompile Include="728.cpp" />
     <ClCompile Include="78.cpp" />
     <ClCompile Include="8.cpp" />
-    <ClCompile Include="814.cpp" />
+    <ClCompile Include="814二叉树剪枝.cpp" />
     <ClCompile Include="832.cpp" />
     <ClCompile Include="846.cpp" />
     <ClCompile Include="861.cpp" />

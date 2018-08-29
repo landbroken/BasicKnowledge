@@ -25,12 +25,12 @@
 /**
 * Definition for a binary tree node.
 */
-struct TreeNode {
-	int val;
-	TreeNode *left;
-	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
+//struct TreeNode {
+//	int val;
+//	TreeNode *left;
+//	TreeNode *right;
+//	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+//};
 class Solution {
 public:
 	//方法1——递归,左右子树镜像相等
