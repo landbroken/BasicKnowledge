@@ -94,8 +94,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadCpp", "ThreadCpp\Thre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "并发", "并发", "{71DC5A67-0193-447F-A0C4-9A278201D553}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "网络编程", "网络编程", "{BE64F363-2083-4408-9C30-3DC409847D8B}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConcurrencyTest", "TcpUdp\并发\CoroutineSever\CoroutineSever.vcxproj", "{127B0BA0-79C7-4BF2-AD00-1DC6891ED0B3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WSAEventSelectModel", "TcpUdp\WSAEventSelectModel\AsyncTcpServer.vcxproj", "{AC2606FE-9732-4EA9-B279-35A66C276898}"
