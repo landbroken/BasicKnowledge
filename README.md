@@ -10,9 +10,10 @@
 * 1、基础算法
 * 2、数据结构
 * 3、设计模式（C#版）
-* 4、TCP/IP网络通信
-* 5、多线程
-* 6、STL
+* 4、多线程
+* 5、STL
+
+原tcp/ip部分迁移到新仓库https://github.com/landbroken/TCP-IP
 
 刷题部分
 * 1、LeetCode刷题
