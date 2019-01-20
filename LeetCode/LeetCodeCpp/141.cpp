@@ -5,15 +5,6 @@
 进阶：
 你能否不使用额外空间解决此题？
 */
-/**
-* Definition for singly-linked list.
-*/
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
-
 class Solution {
 public:
 	bool hasCycle(ListNode *head) {

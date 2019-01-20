@@ -12,13 +12,6 @@ using namespace std;
 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 */
 
-//Definition for singly-linked list.
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
-
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {

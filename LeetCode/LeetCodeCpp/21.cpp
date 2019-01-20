@@ -8,14 +8,6 @@
 ÊäÈë£º1->2->4, 1->3->4
 Êä³ö£º1->1->2->3->4->4
 */
-/**
-* Definition for singly-linked list.
-*/
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
 
 class Solution {
 public:

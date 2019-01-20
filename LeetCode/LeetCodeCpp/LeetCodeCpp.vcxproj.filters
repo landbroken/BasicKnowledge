@@ -39,6 +39,9 @@
     <ClInclude Include="TreeNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ListNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -250,6 +253,9 @@
     </ClCompile>
     <ClCompile Include="204计数质数.cpp">
       <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="237删除链表中的节点.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
