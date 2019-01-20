@@ -172,6 +172,7 @@
     <ClCompile Include="191.cpp" />
     <ClCompile Include="198.cpp" />
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="204计数质数.cpp" />
     <ClCompile Include="206.cpp" />
     <ClCompile Include="21.cpp" />
     <ClCompile Include="214.cpp" />
