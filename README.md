@@ -22,6 +22,9 @@
 单元测试部分
 * 1、以上各内容的单元测试
 
+# Related repositories
+JavaLearning：https://github.com/landbroken/JavaLearning
+
 # Contributor
 LinYulong
 
