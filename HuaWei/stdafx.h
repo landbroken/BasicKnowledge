@@ -13,3 +13,14 @@
 
 
 // TODO:  在此处引用程序需要的其他头文件
+#include "HuaWei.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<cmath>
+#include<list>
+#include<set>
+#include<climits>
+#include<stack>
+#include<algorithm>
+using namespace std;

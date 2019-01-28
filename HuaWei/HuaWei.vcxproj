@@ -181,7 +181,12 @@
     <ClCompile Include="39判断两个IP是否属于同一子网.cpp" />
     <ClCompile Include="3明明的随机数.cpp" />
     <ClCompile Include="40输入一行字符，分别统计出包含英文字母空格数字和其它字符的个数.cpp" />
+    <ClCompile Include="41称砝码.cpp" />
+    <ClCompile Include="42学英语.cpp" />
+    <ClCompile Include="47线性插值.cpp" />
+    <ClCompile Include="49多线程.cpp" />
     <ClCompile Include="4字符串分隔.cpp" />
+    <ClCompile Include="50四则运算.cpp" />
     <ClCompile Include="5进制转换.cpp" />
     <ClCompile Include="6质数因子.cpp" />
     <ClCompile Include="7取近似值.cpp" />
@@ -194,19 +199,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Sudoku.cpp" />
-    <ClCompile Include="从单向链表中删除指定值的节点.cpp" />
+    <ClCompile Include="44Sudoku.cpp" />
+    <ClCompile Include="48从单向链表中删除指定值的节点.cpp" />
     <ClCompile Include="24合唱队.cpp" />
-    <ClCompile Include="名字的漂亮度.cpp" />
+    <ClCompile Include="45名字的漂亮度.cpp" />
     <ClCompile Include="a清一色.cpp" />
     <ClCompile Include="成绩排序.cpp" />
     <ClCompile Include="找出字符串中第一个只出现一次的字符.cpp" />
-    <ClCompile Include="按字节截取字符串.cpp" />
+    <ClCompile Include="46按字节截取字符串.cpp" />
     <ClCompile Include="27查找兄弟单词.cpp" />
     <ClCompile Include="火车进站.cpp" />
     <ClCompile Include="28素数伴侣.cpp" />
     <ClCompile Include="计算字符串的距离.cpp" />
-    <ClCompile Include="迷宫问题.cpp" />
+    <ClCompile Include="43迷宫问题.cpp" />
     <ClCompile Include="高精度整数加法.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -8,8 +8,8 @@ int test_清一色();
 /*
 https://www.nowcoder.com/practice/02cb8d3597cf416d9f6ae1b9ddc4fde3?tpId=37&tqId=21268&rp=0&ru=/ta/huawei&qru=/ta/huawei/question-ranking
 */
-int test_min_zi_de_piao_liang_du();
-int test_an_zi_jie_jie_qu_zi_fu_chuan();
+int test_45();
+int test_46();
 int test_第一个只出现一次的字符();
 int test_计算字符串的距离();
 int test_20();
@@ -18,7 +18,7 @@ int test_20();
 
 #pragma region 链表
 
-int test_shan_chu_zhi_ding_zhi_de_jie_dian();
+int test_48();
 
 #pragma endregion
 
@@ -73,7 +73,7 @@ int test_28();
 数独
 https://www.nowcoder.com/practice/78a1a4ebe8a34c93aac006c44f6bf8a1?tpId=37&tqId=21267&rp=0&ru=/ta/huawei&qru=/ta/huawei/question-ranking
 */
-int test_sudoku();
+int test_44();
 
 #pragma endregion
 

@@ -1,12 +1,6 @@
 #include"stdafx.h"
-#include"HuaWei.h"
-#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-using namespace std;
 
-int test_min_zi_de_piao_liang_du()
+int test_45()
 {
 	int N;
 	while (cin >> N)

@@ -1,9 +1,6 @@
 #include"stdafx.h"
-#include<string>
-#include<iostream>
-using namespace std;
 
-int test_an_zi_jie_jie_qu_zi_fu_chuan()
+int test_46()
 {
 	string str;
 	int maxsize;

@@ -38,21 +38,6 @@
     <ClCompile Include="HuaWei.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="迷宫问题.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Sudoku.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="名字的漂亮度.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="按字节截取字符串.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="从单向链表中删除指定值的节点.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="计算字符串的距离.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -189,6 +174,36 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="40输入一行字符，分别统计出包含英文字母空格数字和其它字符的个数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="41称砝码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="42学英语.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="43迷宫问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="44Sudoku.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="45名字的漂亮度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="46按字节截取字符串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="47线性插值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="48从单向链表中删除指定值的节点.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="49多线程.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="50四则运算.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

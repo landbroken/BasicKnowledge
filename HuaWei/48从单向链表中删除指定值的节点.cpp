@@ -1,10 +1,6 @@
 #include"stdafx.h"
-#include"HuaWei.h"
-#include<list>
-#include<iostream>
-using namespace std;
 
-int test_shan_chu_zhi_ding_zhi_de_jie_dian()
+int test_48()
 {
 	int n;
 	while (cin >> n)

@@ -1,7 +1,4 @@
 #include"stdafx.h"
-#include"HuaWei.h"
-#include <iostream>
-using namespace std;
 
 bool flag = false;
 int num[9][9];
@@ -65,7 +62,7 @@ void dfs(int n) {
 		dfs(n + 1);
 }
 
-int test_sudoku() {
+int test_44() {
 	for (int i = 0;i<9;i++)
 		for (int j = 0;j<9;j++)
 			cin >> num[i][j];
