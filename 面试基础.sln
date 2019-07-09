@@ -102,6 +102,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memory", "基础\内存管�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "位运算", "基础\位运算\位运算.vcxproj", "{90B80B3E-CDA3-4C04-9B60-02BD3B919145}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointer", "基础\指针\pointer\pointer.vcxproj", "{AB89E92F-4CF4-4693-96C3-1698F145E46A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -384,6 +386,16 @@ Global
 		{90B80B3E-CDA3-4C04-9B60-02BD3B919145}.Release|x64.Build.0 = Release|x64
 		{90B80B3E-CDA3-4C04-9B60-02BD3B919145}.Release|x86.ActiveCfg = Release|Win32
 		{90B80B3E-CDA3-4C04-9B60-02BD3B919145}.Release|x86.Build.0 = Release|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Debug|x64.ActiveCfg = Debug|x64
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Debug|x64.Build.0 = Debug|x64
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Debug|x86.Build.0 = Debug|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Release|x64.ActiveCfg = Release|x64
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Release|x64.Build.0 = Release|x64
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Release|x86.ActiveCfg = Release|Win32
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -423,5 +435,6 @@ Global
 		{CC441BF4-7D5A-41AB-A714-0A82FBF92076} = {EEB77E41-72BC-4799-92A7-D23DC1165498}
 		{47000FA2-1F99-4261-B473-F94734938E07} = {28DD8953-0D59-4CA3-A5D0-C00BA2D9C92A}
 		{90B80B3E-CDA3-4C04-9B60-02BD3B919145} = {28DD8953-0D59-4CA3-A5D0-C00BA2D9C92A}
+		{AB89E92F-4CF4-4693-96C3-1698F145E46A} = {28DD8953-0D59-4CA3-A5D0-C00BA2D9C92A}
 	EndGlobalSection
 EndGlobal
