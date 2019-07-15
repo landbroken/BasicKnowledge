@@ -13,6 +13,21 @@ void func(int a, int b, int c)
 
 int main()
 {
+	//1 线程创建
+	//hello_world();
+
+	//2 线程移动示例
+	//thread_move();
+
+	//3 互斥量示例
+	//mutex_demo();
+
+	//4
+	//timed_mutex_demo();
+
+	//5
+	//thread_local_demo();
+
 	call_once_demo();
 
 	//后台执行t2的线程函数,并且不会因为main函数结束时,线程函数未执行完而产生异常

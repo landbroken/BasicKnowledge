@@ -26,6 +26,10 @@ void f_lock_guard()
 	cout << "out id: " << this_thread::get_id() << endl;
 }
 
+/*
+多线程执行顺序不是一定的，通过加锁可以保证同一时间只有一个线程在使用
+注：这里由于线程比较少，执行时间短，所以不加锁基本上也是同样顺序。
+*/
 int mutex_demo()
 {
 	std::thread t1(lock_unlock);

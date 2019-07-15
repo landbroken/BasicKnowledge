@@ -6,7 +6,7 @@ void work()
 {
 	//设置阻塞时间
 	std::chrono::milliseconds timeout(1000);
-	int cnt = 0;
+	unsigned int cnt = 0;
 	while (true) {
 		//带超时的锁,当阻塞超过100milliseconds时返回false
 		if (mutex1.try_lock_for(timeout)) 
