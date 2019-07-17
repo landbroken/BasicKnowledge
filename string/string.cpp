@@ -54,16 +54,15 @@ void AssignReplaceDemo()
 
 	string str1, str2 = "War and Peace";
 	str1.assign(str2, 4, 3);
+	//结果为and
 	cout << str1 << endl;
 
 	string s = "They say he carved it himself...from a BIGGER spoon";
 	string s2 = "find your soul-mate, Homer.";
 	//s[1] = "1";不能用这种形式
 	//replace(off,number,new string)
+	//结果为They find your soul-mate, Homer.from a BIGGER spoon
 	s.replace(5, s2.length(), s2);
-	//char* p;char c = s[0];p = &c;
-	//s.replace(5, 1, p);
-	//结果为"They say he carved it himself...find your soul-mate, Homer."
 	cout << s << endl;
 
 }
@@ -88,6 +87,10 @@ string ReverseStringDemo2(string s) {
 	return s;
 }
 
+/*
+string转为char*类型
+char*转为string类型
+*/
 void Change2CharDemo()
 {
 	cout << endl << "Change2CharDemo:" << endl;
@@ -95,19 +98,34 @@ void Change2CharDemo()
 	string str1 = "War and Peace";
 	const char* chr = str1.c_str();
 	cout << chr << endl;
+
+	//定义成char chr2[10]是一样的
+	char* chr2 = "to_string";
+	string str2 = chr2;
+	cout << str2 << endl;
 }
 
+/*
+string转为Int类型
+int转为string类型
+*/
 void Change2IntDemo()
 {
+	cout << endl << "Change2IntDemo" << endl;
+
+	//stoi：string转int
 	string str1 = "-20";
 	string str2 = "5";
 	int ret = stoi(str1) + stoi(str2);
 	cout << "string to int: -20+5=" << ret << " " << endl;
 
+	//to_string：数值转string
 	int a = -3, b = 37;
 	string a_plus_b = to_string(a + b);
 	cout << "int to string: -3+37=" << a_plus_b << " " << endl;
 
+	//strtol：string转long。_Radix表示进制。
+	//stol：string转long，并做进制转换。Base=0时使用默认的十进制
 	string str3 = "-0x12";
 	string str4 = "0x76E";//1902
 	char *offset;
@@ -145,7 +163,7 @@ void FindDemo()
 
 void AddDemo()
 {
-	cout << "AddDemo" << endl;
+	cout << endl << "AddDemo" << endl;
 	string str = "";
 	str += "5";
 	cout << str << endl;
@@ -157,7 +175,7 @@ void AddDemo()
 
 void CompareDemo()
 {
-	cout << "CompareDemo:" << endl;
+	cout << endl << "CompareDemo:" << endl;
 	string str1("aaa");
 	string str2("aab");
 	string str3("aaaa");
