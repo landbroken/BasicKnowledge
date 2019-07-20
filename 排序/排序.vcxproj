@@ -163,6 +163,9 @@
     </ClCompile>
     <ClCompile Include="sort_main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="算法复杂度表格.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
