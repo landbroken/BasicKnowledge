@@ -16,9 +16,6 @@
     <Filter Include="源文件\算法">
       <UniqueIdentifier>{a9af96bb-39dc-45b2-bb6e-e831999b70b9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\数据库">
-      <UniqueIdentifier>{9ee08751-8b57-4606-8fea-45fa2758546f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -262,13 +259,5 @@
     <ResourceCompile Include="LeetCodeCpp.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="595.sql">
-      <Filter>源文件\数据库</Filter>
-    </None>
-    <None Include="182.sql">
-      <Filter>源文件\数据库</Filter>
-    </None>
   </ItemGroup>
 </Project>
