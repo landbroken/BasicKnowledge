@@ -196,8 +196,36 @@ void WStringDemo()
 	int s1 = wstr1.size();
 }
 
+/*
+用空格分隔字符串示例
+STL没有原生的split函数
+*/
+void SplitDemo() {
+	cout << endl << "begin SplitDemo" << endl;
+	string str = "hello world! this is a string.";
+	vector<string> str_arr;
+	string temp;
+	int offset = 0;
+	int newOffset = 0;
+	//获取空格位置，没有空格时返回-1
+	while (offset<str.size()&& newOffset>=0)
+	{
+		newOffset = str.find(' ', offset);
+		temp = str.substr(offset, newOffset - offset);
+		str_arr.push_back(temp);
+		offset = newOffset + 1;
+	}
+	cout << "origin string = " << str << endl;
+	cout << "split arr size = " << str_arr.size() << endl;
+	for (int i = 0;i < str_arr.size();i++) {
+		cout << "str_arr[" << i << "] = " << str_arr[i] << endl;
+	}
+	cout << "end SplitDemo" << endl;
+}
+
 int main()
 {
+	SplitDemo();
 	WStringDemo();
 	InitialDemo();
 	AssignReplaceDemo();
