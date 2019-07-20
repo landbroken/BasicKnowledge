@@ -162,6 +162,7 @@
     <ClCompile Include="121.cpp" />
     <ClCompile Include="125.cpp" />
     <ClCompile Include="128.cpp" />
+    <ClCompile Include="132分隔回文串.cpp" />
     <ClCompile Include="136.cpp" />
     <ClCompile Include="14.cpp" />
     <ClCompile Include="141.cpp" />

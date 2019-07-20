@@ -252,7 +252,10 @@
       <Filter>源文件\算法</Filter>
     </ClCompile>
     <ClCompile Include="237删除链表中的节点.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="132分隔回文串.cpp">
+      <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
