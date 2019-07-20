@@ -71,6 +71,7 @@ int test_清一色()
 				//未遍历的字符
 				string tmp = str.substr(0, i) + str.substr(i + 2);
 				//遍历全排列
+				//next_permutation() 会生成一个序列的重排列，它是所有可能的字典序中的下一个排列
 				do
 				{
 					int kezi = 0, shunzi = 0;
