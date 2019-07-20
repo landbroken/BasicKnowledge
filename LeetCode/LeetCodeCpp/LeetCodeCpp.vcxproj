@@ -234,8 +234,10 @@
     <ResourceCompile Include="LeetCodeCpp.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="175组合两个表.sql" />
     <None Include="182.sql" />
     <None Include="595.sql" />
+    <None Include="620有趣的电影.sql" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
