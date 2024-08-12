@@ -1,9 +1,10 @@
-// STL.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// STL.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
 #include<vector>
 #include<iostream>
+#include<math>
 #include"stl_demo.h"
 using namespace std;
 
@@ -27,7 +28,7 @@ int main()
 		}
 	}
 
-	//³õÊ¼»¯£¬²åÈë£¬ĞŞ¸Ä
+	//åˆå§‹åŒ–ï¼Œæ’å…¥ï¼Œä¿®æ”¹
 	const int arrvec[4] = { 3,2,2,2 };
 	int arrvec2[4];
 	std::vector<int> vec(3, 1);//1,1,1
